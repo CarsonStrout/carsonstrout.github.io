@@ -52,6 +52,10 @@ section {
 	margin-bottom: 40px;
 }
 
+html {
+	scroll-padding-top: 5rem;
+}
+
 h2 {
 	background-color: #172457;
 	padding: 10px;
