@@ -63,10 +63,10 @@ h2 {
 }
 
 /** Custom CSS **/
-
 #navbar-img {
 	display: block;
 	margin: auto;
+	width: 20px;
 }
 
 #about-section {
