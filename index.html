@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Carson Strout - Game Developer Portfolio</title>
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-		/>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap"
 			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 		/>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -27,197 +27,226 @@
 			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
 			crossorigin="anonymous"
 		></script>
+		<script src="JavaScript/java.js"></script>
 	</head>
 	<body id="body">
-		<header>
-			<nav>
-				<ul>
-					<li>
-						<img
-							class="img-fluid"
-							id="navbar-img"
-							src="assets/img/favicon.png"
-						/>
-					</li>
-					<li>
-						<h1><a href="#">Carson Strout</a></h1>
-					</li>
-					<li><a href="#about">ABOUT</a></li>
-					<li><a href="#projects">PROJECTS</a></li>
-					<li><a href="#">RESUME</a></li>
-					<li><a href="#contact">CONTACT</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<div id="about-section" class="centered-text">
-				<section id="about">
-					<h2>About Me</h2>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-4">
-								<img
-									class="img-fluid"
-									src="assets/img/Carson.png"
-									alt="Photo of Carson Strout"
-								/>
-							</div>
-							<div class="col-md-8">
-								<p>
-									Hi there! I'm Carson, a passionate, team-oriented game
-									designer, programmer, and storyteller.
-								</p>
-								<p>
-									I have a strong drive for creating immersive and engaging
-									gaming experiences, and actively want to push the boundaries
-									of the medium.
-								</p>
-								<p>
-									I have honed my skills in a variety of programming languages
-									and game engines, and am always seeking new opportunities to
-									learn and grow. Whether I am developing a game from scratch or
-									collaborating with a team of developers, I am constantly
-									trying to test the possibilities of games.
-								</p>
-								<p>
-									I believe that video games have the power to bring people
-									together, to challenge our perspectives, and to inspire us to
-									be better. I am dedicated to using my skills and passion to
-									create games that do just that.
-								</p>
-								<p>
-									Currently, I am attending the GIMM program at Boise State
-									University and I can't wait to see where my journey in game
-									development takes me next.
-								</p>
-							</div>
-						</div>
-					</div>
-				</section>
+		<nav
+			class="navbar navbar-expand-lg fixed-top navbar-dark navbar-bgoff"
+			id="nav"
+		>
+			<div class="container-fluid">
+				<a class="navbar-brand" id="name" href="#">
+					<h1>Carson Strout</h1>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navLinks"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse row" id="navLinks">
+					<ul class="navbar-nav center-con">
+						<div class="col-md-9"></div>
+						<li class="nav-item"><a href="#about">ABOUT</a></li>
+						<li class="nav-item"><a href="#projects">PROJECTS</a></li>
+						<li class="nav-item"><a href="#">RESUME</a></li>
+						<li class="nav-item"><a href="#contact">CONTACT</a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="centered-text">
-				<section id="projects">
-					<h2>Projects</h2>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<h3>Project 1</h3>
-								<p>
-									Netus et malesuada fames ac turpis egestas. Ultrices neque
-									ornare aenean euismod. Fermentum leo vel orci porta non
-									pulvinar. Amet consectetur adipiscing elit pellentesque. Ut
-									placerat orci nulla pellentesque dignissim. Nibh tortor id
-									aliquet lectus proin nibh nisl condimentum. Malesuada proin
-									libero nunc consequat interdum. Consectetur adipiscing elit
-									pellentesque habitant morbi tristique senectus. Adipiscing
-									vitae proin sagittis nisl. Et malesuada fames ac turpis.
-									Maecenas pharetra convallis posuere morbi leo. Elementum nibh
-									tellus molestie nunc. Tincidunt eget nullam non nisi est sit
-									amet facilisis magna. Nulla pharetra diam sit amet nisl
-									suscipit.
-								</p>
-							</div>
-							<div class="col-md-6">
-								<h3>Project 2</h3>
-								<p>
-									Aliquam eleifend mi in nulla posuere. Gravida dictum fusce ut
-									placerat orci nulla. Auctor augue mauris augue neque gravida
-									in fermentum et. Ultrices eros in cursus turpis massa
-									tincidunt dui ut. Amet tellus cras adipiscing enim. Morbi
-									tristique senectus et netus et malesuada fames ac turpis. Enim
-									tortor at auctor urna nunc id. Consectetur adipiscing elit ut
-									aliquam. Auctor eu augue ut lectus arcu. Nulla facilisi etiam
-									dignissim diam quis enim lobortis scelerisque fermentum. Dolor
-									sed viverra ipsum nunc aliquet bibendum enim. Commodo
-									ullamcorper a lacus vestibulum. Bibendum ut tristique et
-									egestas quis ipsum suspendisse ultrices.
-								</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6">
-								<h3>Project 3</h3>
-								<p>
-									Nibh cras pulvinar mattis nunc sed blandit libero volutpat
-									sed. Semper eget duis at tellus at urna condimentum. Faucibus
-									et molestie ac feugiat sed. Leo urna molestie at elementum eu
-									facilisis. Lorem mollis aliquam ut porttitor leo a diam
-									sollicitudin tempor. Neque egestas congue quisque egestas diam
-									in. Donec pretium vulputate sapien nec sagittis aliquam.
-									Quisque id diam vel quam elementum. Curabitur vitae nunc sed
-									velit dignissim sodales ut eu. Semper auctor neque vitae
-									tempus quam pellentesque nec nam aliquam. Amet consectetur
-									adipiscing elit ut aliquam purus. Sed adipiscing diam donec
-									adipiscing. Sed risus ultricies tristique nulla aliquet enim
-									tortor at auctor. Posuere urna nec tincidunt praesent semper.
-									Ornare aenean euismod elementum nisi quis eleifend. Vitae
-									proin sagittis nisl rhoncus mattis. Turpis egestas sed tempus
-									urna et pharetra pharetra. Velit sed ullamcorper morbi
-									tincidunt.
-								</p>
-							</div>
-							<div class="col-md-6">
-								<h3>Project 4</h3>
-								<p>
-									Vitae semper quis lectus nulla at volutpat. Aliquam etiam erat
-									velit scelerisque in dictum non. Cursus in hac habitasse
-									platea dictumst quisque sagittis purus. Vel orci porta non
-									pulvinar neque laoreet suspendisse interdum consectetur. Massa
-									sed elementum tempus egestas sed sed. Etiam tempor orci eu
-									lobortis elementum. Ornare massa eget egestas purus viverra.
-									Condimentum id venenatis a condimentum vitae. Maecenas
-									ultricies mi eget mauris. Aliquet porttitor lacus luctus
-									accumsan tortor. Augue interdum velit euismod in pellentesque
-									massa placerat duis. Vitae congue eu consequat ac felis donec
-									et odio pellentesque. Hendrerit gravida rutrum quisque non
-									tellus orci ac auctor.
-								</p>
-							</div>
+		</nav>
+
+		<div class="centered-text" id="top">
+			<section class="dark">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 centered">
+							<h2>Game Developer</h2>
+							<h2>Programmer</h2>
+							<h2>& Designer</h2>
 						</div>
 					</div>
-				</section>
-			</div>
-			<div class="centered-text" id="footer">
-				<section id="contact">
-					<h2>Contact Me</h2>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-3">
-								<p>
-									<a href="mailto: carson.strout42@gmail.com" target="_blank">
-										<i class="fa-2x fa-solid fa-envelope"></i> Email</a
-									>
-								</p>
-							</div>
-							<div class="col-md-3">
-								<p>
-									<a href="#">
-										<i class="fa-2x fa-brands fa-linkedin" target="_blank"></i>
-										LinkedIn</a
-									>
-								</p>
-							</div>
-							<div class="col-md-3">
-								<p>
-									<a href="https://github.com/CarsonStrout" target="_blank">
-										<i class="fa-2x fa-brands fa-github"></i> Github
-									</a>
-								</p>
-							</div>
-							<div class="col-md-3">
-								<p>
-									<a href="https://www.boisestate.edu/gimm/" target="_blank"
-										>GIMM Program</a
-									>
-								</p>
-							</div>
+				</div>
+			</section>
+		</div>
+
+		<div id="about-section" class="centered-text">
+			<section id="about" class="blue">
+				<h2>About Me</h2>
+				<br />
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<img
+								class="img-fluid"
+								src="assets/img/Carson.png"
+								alt="Photo of Carson Strout"
+								id="picture"
+							/>
+						</div>
+						<div class="col-md-8">
+							<p>
+								Hi there! I'm Carson, a passionate, team-oriented game designer,
+								programmer, and storyteller.
+							</p>
+							<p>
+								I have a strong drive for creating immersive and engaging gaming
+								experiences, and actively want to push the boundaries of the
+								medium.
+							</p>
+							<p>
+								I have honed my skills in a variety of programming languages and
+								game engines, and am always seeking new opportunities to learn
+								and grow. Whether I am developing a game from scratch or
+								collaborating with a team of developers, I am constantly trying
+								to test the possibilities of games.
+							</p>
+							<p>
+								I believe that video games have the power to bring people
+								together, to challenge our perspectives, and to inspire us to be
+								better. I am dedicated to using my skills and passion to create
+								games that do just that.
+							</p>
+							<p>
+								Currently, I am attending the GIMM program at Boise State
+								University and I can't wait to see where my journey in game
+								development takes me next.
+							</p>
 						</div>
 					</div>
-					<div class="col-md-12 centered">
-						<p>Copyright &copy; Carson Strout 2023</p>
+				</div>
+			</section>
+		</div>
+
+		<div class="centered-text">
+			<section id="projects" class="dark">
+				<h2>Projects</h2>
+				<br />
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h3>Project 1</h3>
+							<p>
+								Netus et malesuada fames ac turpis egestas. Ultrices neque
+								ornare aenean euismod. Fermentum leo vel orci porta non
+								pulvinar. Amet consectetur adipiscing elit pellentesque. Ut
+								placerat orci nulla pellentesque dignissim. Nibh tortor id
+								aliquet lectus proin nibh nisl condimentum. Malesuada proin
+								libero nunc consequat interdum. Consectetur adipiscing elit
+								pellentesque habitant morbi tristique senectus. Adipiscing vitae
+								proin sagittis nisl. Et malesuada fames ac turpis. Maecenas
+								pharetra convallis posuere morbi leo. Elementum nibh tellus
+								molestie nunc. Tincidunt eget nullam non nisi est sit amet
+								facilisis magna. Nulla pharetra diam sit amet nisl suscipit.
+							</p>
+						</div>
+						<div class="col-md-6">
+							<h3>Project 2</h3>
+							<p>
+								Aliquam eleifend mi in nulla posuere. Gravida dictum fusce ut
+								placerat orci nulla. Auctor augue mauris augue neque gravida in
+								fermentum et. Ultrices eros in cursus turpis massa tincidunt dui
+								ut. Amet tellus cras adipiscing enim. Morbi tristique senectus
+								et netus et malesuada fames ac turpis. Enim tortor at auctor
+								urna nunc id. Consectetur adipiscing elit ut aliquam. Auctor eu
+								augue ut lectus arcu. Nulla facilisi etiam dignissim diam quis
+								enim lobortis scelerisque fermentum. Dolor sed viverra ipsum
+								nunc aliquet bibendum enim. Commodo ullamcorper a lacus
+								vestibulum. Bibendum ut tristique et egestas quis ipsum
+								suspendisse ultrices.
+							</p>
+						</div>
 					</div>
-				</section>
-			</div>
-		</main>
+					<div class="row">
+						<div class="col-md-6">
+							<h3>Project 3</h3>
+							<p>
+								Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed.
+								Semper eget duis at tellus at urna condimentum. Faucibus et
+								molestie ac feugiat sed. Leo urna molestie at elementum eu
+								facilisis. Lorem mollis aliquam ut porttitor leo a diam
+								sollicitudin tempor. Neque egestas congue quisque egestas diam
+								in. Donec pretium vulputate sapien nec sagittis aliquam. Quisque
+								id diam vel quam elementum. Curabitur vitae nunc sed velit
+								dignissim sodales ut eu. Semper auctor neque vitae tempus quam
+								pellentesque nec nam aliquam. Amet consectetur adipiscing elit
+								ut aliquam purus. Sed adipiscing diam donec adipiscing. Sed
+								risus ultricies tristique nulla aliquet enim tortor at auctor.
+								Posuere urna nec tincidunt praesent semper. Ornare aenean
+								euismod elementum nisi quis eleifend. Vitae proin sagittis nisl
+								rhoncus mattis. Turpis egestas sed tempus urna et pharetra
+								pharetra. Velit sed ullamcorper morbi tincidunt.
+							</p>
+						</div>
+						<div class="col-md-6">
+							<h3>Project 4</h3>
+							<p>
+								Vitae semper quis lectus nulla at volutpat. Aliquam etiam erat
+								velit scelerisque in dictum non. Cursus in hac habitasse platea
+								dictumst quisque sagittis purus. Vel orci porta non pulvinar
+								neque laoreet suspendisse interdum consectetur. Massa sed
+								elementum tempus egestas sed sed. Etiam tempor orci eu lobortis
+								elementum. Ornare massa eget egestas purus viverra. Condimentum
+								id venenatis a condimentum vitae. Maecenas ultricies mi eget
+								mauris. Aliquet porttitor lacus luctus accumsan tortor. Augue
+								interdum velit euismod in pellentesque massa placerat duis.
+								Vitae congue eu consequat ac felis donec et odio pellentesque.
+								Hendrerit gravida rutrum quisque non tellus orci ac auctor.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="centered-text blue" id="footer">
+			<section id="contact">
+				<h2>Contact Me</h2>
+				<br />
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4"></div>
+						<div class="col-md-1">
+							<p>
+								<a href="mailto: carson.strout42@gmail.com" target="_blank">
+									<i class="fa-2x fa-solid fa-envelope"></i>
+								</a>
+							</p>
+						</div>
+						<div class="col-md-1">
+							<p>
+								<a href="#">
+									<i class="fa-2x fa-brands fa-linkedin" target="_blank"></i>
+								</a>
+							</p>
+						</div>
+						<div class="col-md-1">
+							<p>
+								<a href="https://github.com/CarsonStrout" target="_blank">
+									<i class="fa-2x fa-brands fa-github"></i>
+								</a>
+							</p>
+						</div>
+						<div class="col-md-1">
+							<p>
+								<a href="https://www.boisestate.edu/gimm/" target="_blank"
+									>GIMM Program</a
+								>
+							</p>
+						</div>
+						<div class="col-md-4"></div>
+					</div>
+				</div>
+				<div class="col-md-12 centered">
+					<p>Copyright &copy; Carson Strout 2023</p>
+				</div>
+			</section>
+		</div>
 	</body>
 </html>
