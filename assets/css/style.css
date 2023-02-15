@@ -52,8 +52,22 @@ section {
 	align-items: center;
 }
 
-#top h2 {
-	font-size: 5em;
+@media only screen and (min-width: 900px) {
+	#top h2 {
+		font-size: 5em;
+	}
+}
+
+@media only screen and (max-width: 899px) and (min-width: 726px) {
+	#top h2 {
+		font-size: 4em;
+	}
+}
+
+@media only screen and (max-width: 725px) {
+	#top h2 {
+		font-size: 3em;
+	}
 }
 
 #nav {
