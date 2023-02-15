@@ -2,13 +2,20 @@ html {
 	scroll-padding-top: var(--scroll-padding, 5.3rem);
 	scroll-behavior: smooth;
 }
-
+/*
 section {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 40px 20vw;
+}
+
+ */
+
+.card{
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
 }
 
 .blue {
@@ -20,10 +27,10 @@ section {
 }
 
 .nav-item {
-	display: block;
-	float: left;
-	position: relative;
-	text-align: center;
+}
+
+.navbar-nav{
+	margin-left: auto;
 }
 
 .centered-text h2 {
@@ -63,13 +70,11 @@ section {
 }
 
 #navLinks {
-	position: relative;
 	list-style: none;
 	font-size: 1.5em;
 }
 
 #navLinks li {
-	display: inline-block;
 	font-size: 1em;
 	padding: 0px 20px;
 }
