@@ -2,20 +2,20 @@ html {
 	scroll-padding-top: var(--scroll-padding, 5.3rem);
 	scroll-behavior: smooth;
 }
-/*
+
 section {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 40px 20vw;
 }
 
- */
-
-.card{
+.card {
 	margin-left: auto;
 	margin-right: auto;
 	border: none;
+	align-items: center;
 }
 
 .blue {
@@ -26,10 +26,7 @@ section {
 	background-color: #222;
 }
 
-.nav-item {
-}
-
-.navbar-nav{
+.navbar-nav {
 	margin-left: auto;
 }
 
