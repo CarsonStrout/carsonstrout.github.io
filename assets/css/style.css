@@ -16,6 +16,30 @@ section {
 	margin-right: auto;
 	border: none;
 	align-items: center;
+	background-color: transparent;
+}
+
+.portfolioCard {
+	transition: 0.3s;
+	background-color: #104050;
+	border-radius: 15px;
+}
+
+/* .portfolioCard:hover {
+} */
+
+#cardContainer h4 {
+	padding: 10px;
+	text-align: center;
+}
+
+#cardContainer p {
+	padding: 8px;
+}
+
+#portfolioImg {
+	border-radius: 15px 15px 0 0;
+	width: 100%;
 }
 
 .blue {
@@ -23,6 +47,10 @@ section {
 }
 
 .dark {
+	background-color: #333;
+}
+
+.darker {
 	background-color: #222;
 }
 
@@ -48,12 +76,21 @@ section {
 #top {
 	display: flex;
 	height: 100vh;
-	background-color: #222;
+	background-color: #333;
 	align-items: center;
 }
 
 #top h2 {
 	font-size: clamp(3rem, 5vw, 5rem);
+}
+
+.topBackground {
+	aspect-ratio: 960/300;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: url("../img/grid.svg");
 }
 
 #nav {
