@@ -40,6 +40,10 @@ section {
 	background-color: transparent;
 }
 
+.portfolioArtifact {
+	margin-bottom: 50px;
+}
+
 .portfolioCard {
 	transition: 0.3s;
 	background-color: #104050;
@@ -48,6 +52,11 @@ section {
 
 .portfolioCard:hover {
 	transform: scale(102%);
+}
+
+.projectText {
+	color: #fffff0;
+	margin-bottom: 20px;
 }
 
 .center-con {
@@ -75,8 +84,18 @@ section {
 	padding-left: 5px;
 }
 
+.projectLinks {
+	transition: 0.3s;
+	color: #fffff0;
+	font-size: 0.8rem;
+}
+
+.projectLinks:hover {
+	color: #26596a;
+}
+
 #portfolioImg {
-	border-radius: 15px 15px 0 0;
+	border-radius: 15px;
 	width: 100%;
 }
 
