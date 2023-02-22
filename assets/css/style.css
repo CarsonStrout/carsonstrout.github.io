@@ -58,6 +58,10 @@ section {
 	border-radius: 15px;
 }
 
+.portfolioCard:hover {
+	transform: scale(102%);
+}
+
 .center-con {
 	text-align: center !important;
 	align-content: center !important;
@@ -66,12 +70,12 @@ section {
 	display: flex !important;
 }
 
-#cardContainer h4 {
+.cardContainer h4 {
 	padding: 10px;
 	text-align: center;
 }
 
-#cardContainer p {
+.cardContainer p {
 	padding: 8px;
 }
 
@@ -132,7 +136,21 @@ section {
 	background-image: url("../img/grid.svg");
 }
 
+@keyframes slideInTop {
+	0% {
+		opacity: 0;
+		filter: blur(5px);
+		transform: translateY(-100%);
+	}
+	100% {
+		opacity: 0.9;
+		filter: blur(0);
+		transform: translateY(0);
+	}
+}
+
 #nav {
+	animation: 1s ease-in-out 0s 1 slideInTop;
 	background-color: #111;
 	opacity: 0.9;
 	padding: 10px 10%;
