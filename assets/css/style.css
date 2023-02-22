@@ -25,8 +25,13 @@ section {
 	border-radius: 15px;
 }
 
-/* .portfolioCard:hover {
-} */
+.center-con {
+	text-align: center !important;
+	align-content: center !important;
+	justify-content: center !important;
+	align-items: center !important;
+	display: flex !important;
+}
 
 #cardContainer h4 {
 	padding: 10px;
