@@ -87,7 +87,7 @@ section {
 }
 
 #top h2 {
-	font-size: clamp(1rem, 5vw, 5rem);
+	font-size: clamp(2rem, 5vw, 5rem);
 }
 
 .topBackground {
