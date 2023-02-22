@@ -1,6 +1,7 @@
 html {
 	scroll-padding-top: var(--scroll-padding, 5.3rem);
 	scroll-behavior: smooth;
+	font-size: 100%;
 }
 
 section {
@@ -86,7 +87,8 @@ section {
 }
 
 #top h2 {
-	font-size: clamp(3rem, 5vw, 5rem);
+	/* font-size: clamp(3rem, 5vw, 5rem); */
+	font-size: 5em;
 }
 
 .topBackground {
