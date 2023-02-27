@@ -38,6 +38,7 @@ section {
 	border: none;
 	align-items: center;
 	background-color: transparent;
+	white-space: nowrap;
 }
 
 .portfolioArtifact {
@@ -124,11 +125,20 @@ section {
 	align-items: center;
 }
 
+.gimmLink {
+	transition: 0.3s;
+	color: #fffff0;
+}
+
+.gimmLink:hover {
+	color: #333;
+}
+
 #body {
 	margin: 0px;
 	font-family: "Merriweather Sans", sans-serif;
 	color: #fffff0;
-	background: #333;
+	background: #222;
 }
 
 #top {
@@ -139,7 +149,7 @@ section {
 }
 
 #top h2 {
-	font-size: clamp(3rem, 5vw, 5rem);
+	font-size: clamp(2.8rem, 5vw, 5rem);
 }
 
 .topBackground {
