@@ -28,7 +28,7 @@
 	letter-spacing: -0.05em;
 	line-height: 0.9;
 
-	background: linear-gradient(to right, #0d9488, #4f46e5);
+	background: linear-gradient(to right, var(--clr-teal), var(--clr-indigo));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }

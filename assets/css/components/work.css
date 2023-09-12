@@ -21,8 +21,8 @@
 
 .work__img {
 	border-radius: 1rem;
-	box-shadow: 0 6px 14px rgba(79, 70, 229, 0.5),
-		0 3px 3px rgba(79, 70, 229, 0.5), 0 0 60px -10px var(--clr-indigo);
+	box-shadow: 0 6px 14px rgba(100, 31, 29, 0.5),
+		0 3px 3px rgba(100, 31, 29, 0.5), 0 0 60px -10px var(--clr-indigo);
 	transition: 0.5s ease-in-out;
 }
 
@@ -159,7 +159,7 @@
 
 	.work__project-description2 {
 		font-size: var(--size-xs);
-		margin-bottom: 1em;
+		margin-bottom: 2rem;
 	}
 
 	.work__project-btn {
@@ -167,7 +167,11 @@
 	}
 
 	.work__project:not(:last-child) {
-		margin-bottom: 0;
+		margin-bottom: 2rem;
+	}
+
+	.work__project:last-child {
+		margin-top: 2rem;
 	}
 
 	.work__project-subtitle {

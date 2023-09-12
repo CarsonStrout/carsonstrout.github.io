@@ -5,7 +5,7 @@
 	--clr-zinc600: #52525b;
 	--clr-zinc800: #27272a;
 	--clr-teal: #0d9488;
-	--clr-indigo: #4f46e5;
+	--clr-indigo: #ff504a;
 
 	/* teal rgb(13, 148, 136) */
 	/* indigo rgb(79, 70, 229) */
@@ -49,6 +49,7 @@ body {
 	font-family: "General Sans", sans-serif;
 	background-color: var(--clr-dark);
 	color: var(--clr-light);
+	overflow-x: hidden;
 }
 
 img,

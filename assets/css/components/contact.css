@@ -23,6 +23,10 @@
 	font-size: var(--size-sm);
 }
 
+.contact__extra {
+	font-size: var(--size-xs);
+}
+
 /* xs */
 @media (min-width: 475px) {
 	.contact {
@@ -39,6 +43,10 @@
 
 	.contact__btn {
 		font-size: var(--size-base);
+	}
+
+	.contact__extra {
+		font-size: var(--size-sm);
 	}
 }
 
@@ -65,6 +73,10 @@
 	.contact__btn {
 		font-size: var(--size-lg);
 	}
+
+	.contact__extra {
+		font-size: var(--size-base);
+	}
 }
 
 /* xl */
@@ -83,6 +95,10 @@
 
 	.contact__btn {
 		font-size: var(--size-xl);
+	}
+
+	.contact__extra {
+		font-size: var(--size-lg);
 	}
 }
 
