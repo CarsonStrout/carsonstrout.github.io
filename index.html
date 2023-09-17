@@ -8,8 +8,10 @@
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
 
 		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
 			rel="stylesheet"
 		/>
 
@@ -17,6 +19,7 @@
 		<script defer src="assets/src/dark-mode.js"></script>
 		<script defer src="assets/src/mobile-nav.js"></script>
 		<script defer src="assets/src/slide-in.js"></script>
+		<script defer src="assets/src/hero-text.js"></script>
 
 		<!-- CSS -->
 		<link
@@ -149,11 +152,9 @@
 		<main>
 			<!-- Hero -->
 			<section class="hero container">
-				<h2 class="hero__title">
-					Game Developer <br />
-					Programmer <br />
-					& Designer
-				</h2>
+				<h2 data-value="Game Developer" class="hero__title">Game Developer</h2>
+				<h2 data-value="Programmer" class="hero__title">Programmer</h2>
+				<h2 data-value="& Designer" class="hero__title">& Designer</h2>
 				<p class="hero__description">
 					A passionate <strong>Game Dev / Programmer / Designer</strong> who
 					specializes in creating immersive, interactive, and accessible
@@ -170,7 +171,7 @@
 			<!-- About -->
 			<section id="about" class="about container section">
 				<div class="about__content">
-					<h2 class="about__title">About</h2>
+					<h2 data-value="About" class="about__title">About</h2>
 					<p class="about__description">
 						Hey there 👋, I'm Carson - a passionate and team-oriented
 						<strong>game designer, programmer, and storyteller</strong>. I have
@@ -209,18 +210,19 @@
 						wait to see where my journey in game development takes me next.
 					</p>
 				</div>
-				<div class="about__img-wrapper">
-					<img
-						class="lazy about__img loading"
-						src="assets/img/Portrait.png"
-						alt="Profile picture"
-					/>
-				</div>
+				<a href="https://www.linkedin.com/in/carsonstrout/" target="_blank"
+					><div class="about__img-wrapper">
+						<img
+							class="lazy about__img loading"
+							src="assets/img/Portrait.png"
+							alt="Profile picture"
+						/></div
+				></a>
 			</section>
 
 			<!-- Projects -->
 			<section id="projects" class="projects container section">
-				<h2 class="projects__title">Projects</h2>
+				<h2 data-value="Projects" class="projects__title">Projects</h2>
 				<p class="projects__description">
 					This collection of projects showcases my skills and passion. Each
 					project I look to build upon what I have previously done, and actively
@@ -242,13 +244,13 @@
 						target="_blank"
 						><div class="projects__img-wrapper projects__image1">
 							<img
-								class="lazy projects__img loadingLeft"
+								class="lazy projects__img loading"
 								src="assets/img/AThief'sDilemma.png"
 								alt="A Thief's Dilemma Project"
 							/></div
 					></a>
 
-					<div class="projects__project projects__content1 loadingRight lazy">
+					<div class="projects__project projects__content1 loading lazy">
 						<h3 class="projects__project-subtitle">A Thief's Dilemma</h3>
 						<p class="projects__project-description1">
 							<b>Collaborators:</b> Sam Lummus, Kevin Sherwood, Hank Davidson
@@ -283,12 +285,12 @@
 					<a href="https://github.com/CarsonStrout/DeadWest" target="_blank"
 						><div class="projects__img-wrapper projects__image2">
 							<img
-								class="lazy projects__img loadingRight"
+								class="lazy projects__img loading"
 								src="assets/img/DeadWest.png"
 								alt="Dead West Project"
 							/></div
 					></a>
-					<div class="projects__project projects__content2 loadingLeft lazy">
+					<div class="projects__project projects__content2 loading lazy">
 						<h3 class="projects__project-subtitle">Dead West</h3>
 						<p class="projects__project-description1">
 							<b>Collaborators:</b> Chase Franklin
@@ -325,12 +327,12 @@
 						target="_blank"
 						><div class="projects__img-wrapper projects__image3">
 							<img
-								class="lazy projects__img loadingLeft"
+								class="lazy projects__img loading"
 								src="assets/img/JumpMonkeJump.PNG"
 								alt="Jump Monke Jump Project"
 							/></div
 					></a>
-					<div class="projects__project projects__content3 loadingRight lazy">
+					<div class="projects__project projects__content3 loading lazy">
 						<h3 class="projects__project-subtitle">Jump Monke Jump</h3>
 						<p class="projects__project-description1">
 							<b>Collaborators:</b> Chase Franklin, Sam Lummus, Jackson Neal,
@@ -366,13 +368,13 @@
 					>
 						<div class="projects__img-wrapper projects__image4">
 							<img
-								class="lazy projects__img loadingRight"
+								class="lazy projects__img loading"
 								src="assets/img/DustyFrontier.PNG"
 								alt="Dusty Frontier Project"
 							/></div
 					></a>
 
-					<div class="projects__project projects__content4 loadingLeft lazy">
+					<div class="projects__project projects__content4 loading lazy">
 						<h3 class="projects__project-subtitle">Dusty Frontier</h3>
 						<p class="projects__project-description1">
 							<b>Roles:</b> Designer, Programmer, Artist
@@ -399,13 +401,13 @@
 					>
 						<div class="projects__img-wrapper projects__image5">
 							<img
-								class="lazy projects__img loadingLeft"
+								class="lazy projects__img loading"
 								src="assets/img/ShadowAdventure.PNG"
 								alt="Shadow Adventure Project"
 							/>
 						</div>
 					</a>
-					<div class="projects__project projects__content5 loadingRight lazy">
+					<div class="projects__project projects__content5 loading lazy">
 						<h3 class="projects__project-subtitle">Shadow Adventure</h3>
 						<p class="projects__project-description1">
 							<b>Roles:</b> Designer, Programmer, Artist
@@ -429,7 +431,9 @@
 
 			<!-- Contact -->
 			<section id="contact" class="contact container section">
-				<h2 class="contact__title">Get In Contact</h2>
+				<h2 data-value="Get In Contact" class="contact__title">
+					Get In Contact
+				</h2>
 				<p class="contact__description">
 					If you have any business inquiries or simply want to reach out, feel
 					free to send me an email. I will respond as soon as possible.

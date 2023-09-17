@@ -39,7 +39,8 @@ html {
 }
 
 body {
-	font-family: "General Sans", sans-serif;
+	/* font-family: "General Sans", sans-serif; */
+	font-family: "Montserrat", sans-serif;
 	background-color: var(--clr-darker);
 	color: var(--clr-light);
 	overflow-x: hidden;
