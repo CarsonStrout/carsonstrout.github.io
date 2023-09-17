@@ -1,31 +1,26 @@
 :root {
-	--clr-dark: #0b0b0e;
+	/* Colors */
+	--clr-dark: #222;
+	--clr-darker: #111;
 	--clr-light: #fffff0;
-	--clr-zinc400: #a1a1aa;
-	--clr-zinc600: #52525b;
-	--clr-zinc800: #27272a;
-	--clr-teal: #0d9488;
-	--clr-indigo: #ff6d6a;
+	--clr-light2: #e8e5cf;
+	--clr-highlight: #d4af37;
+	--clr-link: #0d9488;
 
-	/* teal rgb(13, 148, 136) */
-	/* indigo rgb(79, 70, 229) */
-
-	/* sizes */
-	--size-xxs: 0.5rem;
-	--size-xs: 0.75rem;
-	--size-sm: 0.875rem;
-	--size-base: 1rem;
-	--size-lg: 1.125rem;
-	--size-xl: 1.25rem;
-	--size-2xl: 1.5rem;
-	--size-3xl: 1.875rem;
-	--size-4xl: 2.25rem;
-	--size-5xl: 3rem;
-	--size-6xl: 3.75rem;
-	--size-7xl: 4.5rem;
-	--size-8xl: 6rem;
-	--size-9xl: 8rem;
-	--size-10xl: 10rem;
+	/* Sizes */
+	--text-xs: 0.75rem; /* 12px */
+	--text-sm: 0.875rem; /* 14px */
+	--text-base: 1rem; /* 16px */
+	--text-lg: 1.125rem; /* 18px */
+	--text-xl: 1.25rem; /* 20px */
+	--text-2xl: 1.5rem; /* 24px */
+	--text-3xl: 1.875rem; /* 30px */
+	--text-4xl: 2.25rem; /* 36px */
+	--text-5xl: 3rem; /* 48px */
+	--text-6xl: 3.75rem; /* 60px */
+	--text-7xl: 4.5rem; /* 72px */
+	--text-8xl: 6rem; /* 96px */
+	--text-9xl: 8rem; /* 128px */
 }
 
 * {
@@ -38,28 +33,38 @@ html {
 }
 
 .light-mode {
-	--clr-light: #0b0b0e;
-	--clr-dark: #fffff0;
-	--clr-zinc400: #27272a;
-	--clr-zinc600: #27272a;
-	--clr-zinc800: #27272a;
+	--clr-darker: #fffff0;
+	--clr-light: #111;
+	--clr-light2: #222;
 }
 
 body {
 	font-family: "General Sans", sans-serif;
-	background-color: var(--clr-dark);
+	background-color: var(--clr-darker);
 	color: var(--clr-light);
 	overflow-x: hidden;
 }
 
-img,
-picture,
-video,
-canvas,
-svg {
+img {
 	display: block;
 	max-width: 100%;
 	user-select: none;
+}
+
+a {
+	color: var(--clr-link);
+}
+
+.link {
+	transition: 0.3s;
+}
+
+.link:hover {
+	opacity: 30%;
+}
+
+strong {
+	color: var(--clr-highlight);
 }
 
 button {
@@ -69,14 +74,6 @@ button {
 	background: none;
 	cursor: pointer;
 	color: inherit;
-}
-
-a {
-	color: var(--clr-teal);
-}
-
-strong {
-	color: var(--clr-indigo);
 }
 
 /* Scrollbar */
@@ -89,6 +86,6 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: var(--clr-teal);
-	outline: 1px solid var(--clr-teal);
+	background-color: var(--clr-highlight);
+	outline: 1px solid var(--clr-darker);
 }

@@ -6,42 +6,35 @@
 	align-items: center;
 	gap: 1rem;
 	margin-top: 2rem;
-}
-
-.hero__img {
-	border-radius: 50%;
-	width: 6rem;
-	height: 6rem;
-	box-shadow: 5px 5px 5px #0b0b0e;
-}
-
-.hero__subtitle {
-	color: var(--clr-zinc800);
-	font-size: var(--size-base);
-	line-height: 0.9;
+	height: 100vh;
 }
 
 .hero__title {
-	color: var(--clr-zinc400);
+	color: var(--clr-light);
 	text-transform: uppercase;
-	font-size: var(--size-4xl);
+	font-size: var(--text-4xl);
 	letter-spacing: -0.05em;
 	line-height: 0.9;
 
-	background: linear-gradient(to right, var(--clr-teal), var(--clr-indigo));
+	background: linear-gradient(to right, var(--clr-highlight), var(--clr-light));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 }
 
 .hero__description {
 	max-width: 60ch;
-	font-size: var(--size-sm);
-	color: var(--clr-zinc600);
+	font-size: var(--text-sm);
+	color: var(--clr-light);
 }
 
 .hero__btn {
-	text-transform: capitalize;
-	font-size: var(--size-sm);
+	font-size: var(--text-sm);
 }
 
 /* xs */
@@ -56,19 +49,19 @@
 	}
 
 	.hero__subtitle {
-		font-size: var(--size-lg);
+		font-size: var(--text-lg);
 	}
 
 	.hero__title {
-		font-size: var(--size-5xl);
+		font-size: var(--text-5xl);
 	}
 
 	.hero__description {
-		font-size: var(--size-base);
+		font-size: var(--text-base);
 	}
 
 	.hero__btn {
-		font-size: var(--size-base);
+		font-size: var(--text-base);
 	}
 }
 
@@ -90,19 +83,19 @@
 	}
 
 	.hero__subtitle {
-		font-size: var(--size-2xl);
+		font-size: var(--text-2xl);
 	}
 
 	.hero__title {
-		font-size: var(--size-7xl);
+		font-size: var(--text-7xl);
 	}
 
 	.hero__description {
-		font-size: var(--size-lg);
+		font-size: var(--text-lg);
 	}
 
 	.hero__btn {
-		font-size: var(--size-lg);
+		font-size: var(--text-lg);
 	}
 }
 
@@ -118,19 +111,19 @@
 	}
 
 	.hero__subtitle {
-		font-size: var(--size-4xl);
+		font-size: var(--text-4xl);
 	}
 
 	.hero__title {
-		font-size: var(--size-9xl);
+		font-size: var(--text-9xl);
 	}
 
 	.hero__description {
-		font-size: var(--size-xl);
+		font-size: var(--text-xl);
 	}
 
 	.hero__btn {
-		font-size: var(--size-xl);
+		font-size: var(--text-xl);
 	}
 }
 

@@ -11,23 +11,23 @@
 }
 
 .about__title {
-	font-size: var(--size-2xl);
+	font-size: var(--text-2xl);
 	color: var(--clr-light);
 }
 
 .about__description {
 	max-width: 60ch;
-	font-size: var(--size-sm);
-	color: var(--clr-zinc600);
+	font-size: var(--text-sm);
+	color: var(--clr-light2);
 }
 
 .about__hr {
-	border-color: var(--clr-zinc800);
+	border-color: var(--clr-highlight);
 }
 
 .about__subtitle {
-	font-size: var(--size-sm);
-	color: var(--clr-zinc400);
+	font-size: var(--text-sm);
+	color: var(--clr-light2);
 }
 
 .about__ul-container {
@@ -40,11 +40,12 @@
 	gap: 1em;
 	padding-left: 1em;
 	flex: 1;
+	border: 1px solid red;
 }
 
 .about__list {
-	font-size: var(--size-sm);
-	color: var(--clr-zinc600);
+	font-size: var(--text-sm);
+	color: var(--clr-light2);
 }
 
 .about__list::before {
@@ -54,7 +55,7 @@
 
 .about__img {
 	border-radius: 1rem;
-	box-shadow: 5px 5px 5px #0b0b0e;
+	border: 1px solid var(--clr-highlight);
 }
 
 /* xs */
@@ -68,19 +69,19 @@
 	}
 
 	.about__title {
-		font-size: var(--size-3xl);
+		font-size: var(--text-3xl);
 	}
 
 	.about__description {
-		font-size: var(--size-base);
+		font-size: var(--text-base);
 	}
 
 	.about__subtitle {
-		font-size: var(--size-base);
+		font-size: var(--text-base);
 	}
 
 	.about__list {
-		font-size: var(--size-base);
+		font-size: var(--text-base);
 	}
 }
 
@@ -109,19 +110,19 @@
 	}
 
 	.about__title {
-		font-size: var(--size-4xl);
+		font-size: var(--text-4xl);
 	}
 
 	.about__description {
-		font-size: var(--size-lg);
+		font-size: var(--text-lg);
 	}
 
 	.about__subtitle {
-		font-size: var(--size-lg);
+		font-size: var(--text-lg);
 	}
 
 	.about__list {
-		font-size: var(--size-lg);
+		font-size: var(--text-lg);
 	}
 }
 
@@ -132,19 +133,19 @@
 	}
 
 	.about__title {
-		font-size: var(--size-5xl);
+		font-size: var(--text-5xl);
 	}
 
 	.about__description {
-		font-size: var(--size-xl);
+		font-size: var(--text-xl);
 	}
 
 	.about__subtitle {
-		font-size: var(--size-xl);
+		font-size: var(--text-xl);
 	}
 
 	.about__list {
-		font-size: var(--size-xl);
+		font-size: var(--text-xl);
 	}
 
 	.about__img {
