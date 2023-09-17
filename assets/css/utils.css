@@ -41,25 +41,11 @@
 }
 
 .loading {
-	/* filter: blur(40px) grayscale(100%); */
 	filter: grayscale(100%) opacity(0);
-}
-
-.loadingLeft {
-	opacity: 0;
-	filter: blur(40px) grayscale(100%);
-	transform: translateX(-25%);
-}
-
-.loadingRight {
-	opacity: 0;
-	filter: blur(40px) grayscale(100%);
-	transform: translateX(25%);
 }
 
 .loaded {
 	opacity: 1;
-	/* filter: blur(0) grayscale(0); */
 	filter: grayscale(0) opacity(100);
 	transform: translatex(0);
 	transition: 1.5s ease-in-out;
