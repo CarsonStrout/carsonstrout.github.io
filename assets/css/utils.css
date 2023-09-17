@@ -98,7 +98,7 @@
 
 .btn:hover {
 	background-position: left;
-	color: var(--clr-light);
+	color: #fffff0;
 	box-shadow: 0 14px 28px rgba(13, 148, 136, 0.25),
 		0 10px 10px rgba(13, 148, 136, 0.22), 0 0 120px -10px var(--clr-link);
 	transform: translateY(-2px);
