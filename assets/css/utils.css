@@ -51,6 +51,15 @@
 	transition: 1.5s ease-in-out;
 }
 
+.loaded-slow {
+	opacity: 1;
+	filter: grayscale(0) opacity(100);
+	transform: translatex(0);
+	transition-delay: 0.75s;
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out;
+}
+
 /* Button */
 .btn {
 	appearance: none;
