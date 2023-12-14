@@ -1,7 +1,7 @@
-.footer__title {
+.footer_title {
 	font-size: var(--text-xs);
 	font-weight: 400;
-	color: var(--clr-light2);
+	color: #e8e5cf;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;

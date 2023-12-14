@@ -1,286 +1,177 @@
-.projects {
-	text-align: center;
+.projects p {
+	color: #e8e5cf;
 }
 
-.projects__title {
+.projects h2 {
 	font-size: var(--text-2xl);
-	color: var(--clr-light);
 }
 
-.projects__description {
+.projects h3 {
+	font-size: var(--text-xl);
+}
+
+.projects_img {
+	border-radius: 1rem;
+	border: 1px solid #d4af37;
+	transition: 0.75s;
+	margin: 2rem 0;
+}
+
+.projects_img:hover {
+	transform: scale(102%);
+	box-shadow: 0 3.5px 7px rgba(212, 175, 55, 0.25),
+		0 2.5px 2.5px rgba(212, 175, 55, 0.22), 0 0 30px -2.5px #d4af37;
+	cursor: pointer;
+}
+
+.projects_description {
 	max-width: 60ch;
 	font-size: var(--text-sm);
-	color: var(--clr-light2);
 	margin: 1rem auto;
 }
 
-.projects__project-title {
+.projects_project-title {
 	font-size: var(--text-base);
-	margin-bottom: 1rem;
+	font-weight: 500;
 }
 
-.projects__img-wrapper {
-	border-radius: 1rem;
-	position: relative;
-	z-index: 1;
-	transition: 0.5s ease-in-out;
-}
-
-.projects__img-wrapper::before {
-	border-radius: 1rem;
-
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: 999;
-	left: 0;
-	top: 0;
-}
-
-.projects__img-wrapper:hover {
-	transform: scale(102%);
-	box-shadow: 0 3.5px 7px rgba(212, 175, 55, 0.25),
-		0 2.5px 2.5px rgba(212, 175, 55, 0.22), 0 0 30px -2.5px var(--clr-highlight);
-}
-
-.projects__img {
-	border-radius: 1rem;
-	border: 1px solid var(--clr-highlight);
-}
-
-.projects__project-title {
-	font-size: var(--text-base);
-	margin-bottom: 1rem;
-}
-
-.projects__project:not(:last-child) {
-	margin-bottom: 5rem;
-}
-
-.projects__project-description1 {
-	font-size: var(--text-sm);
-	color: var(--clr-light2);
-	margin: 1rem 0;
-}
-
-.projects__project-description2 {
-	font-size: var(--text-sm);
-	color: var(--clr-light2);
-	margin-bottom: 1rem;
-}
-
-.projects__project-btn {
+.projects_project-description {
 	font-size: var(--text-sm);
 }
 
-.projects__project-subtitle {
-	display: none;
+.projects_project-btn {
+	font-size: var(--text-sm);
 }
+
+/* Games */
+
+/* Web */
+
+/* Other */
 
 /* xs */
 @media (min-width: 475px) {
-	.projects__title {
+	.projects h2 {
 		font-size: var(--text-3xl);
 	}
 
-	.projects__description {
+	.projects h3 {
+		font-size: var(--text-2xl);
+	}
+
+	.projects_description {
 		font-size: var(--text-base);
 		margin: 1.5rem auto;
 	}
 
-	.projects__project-title {
+	.projects_project-title {
 		font-size: var(--text-lg);
-		margin-bottom: 1.5rem;
+		margin-bottom: 1.5rem 0;
 	}
 
-	.projects__project-description1 {
+	.projects_project-description {
 		font-size: var(--text-base);
 		margin: 1.5rem 0;
 	}
 
-	.projects__project-description2 {
-		font-size: var(--text-base);
-		margin-bottom: 1.5rem;
-	}
-
-	.projects__project-btn {
+	.projects_project-btn {
 		font-size: var(--text-base);
 	}
 }
 
 /* sm */
 @media (min-width: 640px) {
-	.projects__container {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas:
-			"image1 content1"
-			"content2 image2"
-			"image3 content3"
-			"content4 image4"
-			"image5 content5";
-		place-items: center;
-	}
-
-	.projects__image1 {
-		grid-area: image1;
-	}
-
-	.projects__image2 {
-		grid-area: image2;
-	}
-
-	.projects__image3 {
-		grid-area: image3;
-	}
-
-	.projects__image4 {
-		grid-area: image4;
-	}
-
-	.projects__image5 {
-		grid-area: image5;
-	}
-
-	.projects__content1 {
-		grid-area: content1;
-	}
-
-	.projects__content2 {
-		grid-area: content2;
-	}
-
-	.projects__content3 {
-		grid-area: content3;
-	}
-
-	.projects__content4 {
-		grid-area: content4;
-	}
-
-	.projects__content5 {
-		grid-area: content5;
-	}
-
-	.projects__project {
+	.projects_project {
 		padding: 0 1rem;
 	}
 
-	.projects__project-title {
-		display: none;
+	.projects_project-title {
+		display: block;
+		font-size: var(--text-base);
+		margin-bottom: 1em 0;
 	}
 
-	.projects__project-description1 {
+	.projects_project-description {
 		font-size: var(--text-xs);
 		margin: 1em 0;
 	}
 
-	.projects__project-description2 {
+	.projects_project-btn {
 		font-size: var(--text-xs);
-		margin-bottom: 2rem;
-	}
-
-	.projects__project-btn {
-		font-size: var(--text-xs);
-	}
-
-	.projects__project:not(:last-child) {
-		margin-bottom: 2rem;
-	}
-
-	.projects__project:last-child {
-		margin-top: 2rem;
-	}
-
-	.projects__project-subtitle {
-		display: block;
-		font-size: var(--text-base);
 	}
 }
 
 /* md */
 @media (min-width: 768px) {
-	.projects__project-description1 {
+	.projects_project-description {
 		font-size: var(--text-sm);
 	}
 
-	.projects__project-description2 {
+	.projects_project-btn {
 		font-size: var(--text-sm);
 	}
 
-	.projects__project-btn {
-		font-size: var(--text-sm);
-	}
-
-	.projects__project-subtitle {
+	.projects_project-title {
 		font-size: var(--text-lg);
 	}
 }
 
 /* lg */
 @media (min-width: 1024px) {
-	.projects__title {
+	.projects h2 {
 		font-size: var(--text-4xl);
 	}
 
-	.projects__description {
+	.projects h3 {
+		font-size: var(--text-3xl);
+	}
+
+	.projects_description {
 		font-size: var(--text-lg);
 	}
 
-	.projects__project-description1 {
+	.projects_project-description {
 		font-size: var(--text-base);
 	}
 
-	.projects__project-description2 {
+	.projects_project-btn {
 		font-size: var(--text-base);
 	}
 
-	.projects__project-btn {
-		font-size: var(--text-base);
-	}
-
-	.projects__project-subtitle {
+	.projects_project-title {
 		font-size: var(--text-xl);
 	}
 }
 
 /* xl */
 @media (min-width: 1280px) {
-	.projects__title {
+	.projects h2 {
 		font-size: var(--text-5xl);
 	}
 
-	.projects__description {
+	.projects h3 {
+		font-size: var(--text-4xl);
+	}
+
+	.projects_description {
 		font-size: var(--text-xl);
 		margin: 2rem auto;
 	}
 
-	.projects__project-description1 {
+	.projects_project-description {
 		font-size: var(--text-lg);
 	}
 
-	.projects__project-description2 {
+	.projects_project-btn {
 		font-size: var(--text-lg);
 	}
 
-	.projects__project-btn {
-		font-size: var(--text-lg);
-	}
-
-	.projects__project-subtitle {
+	.projects_project-title {
 		font-size: var(--text-2xl);
-	}
-
-	.projects__container {
-		width: 80%;
-		margin: 0 auto;
 	}
 }
 
 /* 2xl */
-@media (min-width: 1536px) {
-	.projects__container {
-		width: 70%;
-	}
-}
+/* @media (min-width: 1536px) {
+	
+} */

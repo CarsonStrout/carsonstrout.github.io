@@ -15,479 +15,668 @@
 			rel="stylesheet"
 		/>
 
-		<!-- JavaScript -->
-		<script defer src="assets/src/appear.js"></script>
-		<script defer src="assets/src/dark-mode.js"></script>
-		<script defer src="assets/src/hero-text.js"></script>
-		<script defer src="assets/src/mobile-nav.js"></script>
+		<!-- Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
 
 		<!-- CSS -->
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="assets/css/modern-normalize.css"
-		/>
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/utils.css" />
-		<!-- CSS Components -->
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="assets/css/components/about.css"
-		/>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="assets/css/components/contact.css"
-		/>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="assets/css/components/footer.css"
-		/>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="assets/css/components/header.css"
-		/>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="assets/css/components/hero.css"
-		/>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="assets/css/components/mobile-nav.css"
-		/>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="assets/css/components/projects.css"
-		/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/components/hero.css" />
+		<link rel="stylesheet" href="assets/css/components/about.css" />
+		<link rel="stylesheet" href="assets/css/components/projects.css" />
+		<link rel="stylesheet" href="assets/css/components/contact.css" />
+		<link rel="stylesheet" href="assets/css/components/footer.css" />
+
+		<!-- JS -->
+		<script src="assets/js/videoVisibility.js"></script>
+		<script defer src="assets/js/textScramble.js"></script>
+		<script defer src="assets/js/appear.js"></script>
 
 		<title>Carson Strout - Game Developer Portfolio</title>
 	</head>
 	<body>
-		<!-- Header -->
-		<header class="header container lazy2 loading">
-			<nav>
-				<ul class="header__menu">
-					<li><a class="header__link" href="#about">About</a></li>
-					<li><a class="header__link" href="#projects">Projects</a></li>
-					<li><a class="header__link" href="#contact">Contact</a></li>
-					<li class="header__line"></li>
-					<li>
-						<button id="theme-toggle" class="header__sun">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 24 24"
-								fill="currentColor"
-							>
-								<path
-									d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
-								/>
-							</svg>
-						</button>
-					</li>
-					<li>
-						<a
-							class="header__resume btn"
-							href="assets/CarsonStroutDeveloper.pdf"
-							target="_blank"
-							>Resume</a
-						>
-					</li>
-				</ul>
-				<button class="header__bars">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 24 24"
-						fill="currentColor"
-					>
-						<path
-							fill-rule="evenodd"
-							d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-							clip-rule="evenodd"
-						/>
-					</svg>
+		<!-- NavBar -->
+		<nav class="navbar navbar-expand-lg bg_dark fixed-top fade2 loading">
+			<div class="container-fluid container">
+				<a class="navbar-brand" href="#">
+					<img
+						src="assets/img/favicon.png"
+						width="25"
+						height="30"
+						class="d-inline-block align-top"
+						alt="Icon"
+					/>
+				</a>
+				<button
+					class="navbar-toggler navbar-dark"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavAltMarkup"
+					aria-controls="navbarNavAltMarkup"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
 				</button>
-			</nav>
-		</header>
-
-		<!-- Mobile Header -->
-		<div class="mobile-nav">
-			<nav>
-				<ul class="mobile-nav__menu">
-					<li><a class="mobile-nav__link" href="#about">About</a></li>
-					<li><a class="mobile-nav__link" href="#work">Work</a></li>
-					<li><a class="mobile-nav__link" href="#contact">Contact</a></li>
-					<li class="mobile-nav__link-line"></li>
-					<li>
-						<button id="theme-toggle" class="mobile-nav__sun">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 24 24"
-								fill="currentColor"
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-link nav_text" href="#about">About</a>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle nav_text"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
 							>
-								<path
-									d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
-								/>
-							</svg>
-						</button>
-					</li>
-					<li>
+								Projects
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="#games">Games</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#web">Websites</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#other">Other</a>
+								</li>
+							</ul>
+						</li>
+						<a class="nav-link nav_text" href="#contact">Contact</a>
 						<a
-							class="mobile-nav__btn btn"
+							class="nav-link nav_text"
 							href="assets/CarsonStroutDeveloper.pdf"
 							target="_blank"
 							>Resume</a
 						>
-					</li>
-				</ul>
-			</nav>
-		</div>
-		<!-- End of Mobile Header -->
-
-		<main>
-			<!-- Hero -->
-			<section class="hero container">
-				<div class="lazy loading">
-					<h2 data-value="Game Developer" class="hero__title">
-						Game Developer
-					</h2>
-				</div>
-				<div class="lazy loading">
-					<h2 data-value="Programmer" class="hero__title">Programmer</h2>
-				</div>
-				<div class="lazy loading">
-					<h2 data-value="& Designer" class="hero__title">& Designer</h2>
-				</div>
-
-				<div class="lazy2 loading">
-					<p class="hero__description">
-						A passionate <strong>Game Dev / Programmer / Designer</strong> who
-						specializes in creating immersive, interactive, and accessible
-						experiences for everyone.
-					</p>
-				</div>
-
-				<div class="lazy2 loading">
-					<a
-						class="hero__btn btn"
-						href="mailto:carson.strout42@gmail.com"
-						target="_blank"
-						>Contact Me</a
-					>
-				</div>
-			</section>
-
-			<!-- About -->
-			<section id="about" class="about container section">
-				<div class="about__content">
-					<h2 data-value="About" class="about__title lazy loading">About</h2>
-					<p class="about__description lazy loading">
-						Hey there 👋, I'm Carson - a passionate and team-oriented
-						<strong>game designer, programmer, and storyteller</strong>. I have
-						a strong drive for creating immersive and engaging gaming
-						experiences, and actively want to push the boundaries of the medium.
-						I have honed my skills in a variety of programming languages and
-						game engines, and am always seeking new opportunities to learn and
-						grow.
-					</p>
-					<p class="about__description lazy loading">
-						Whether I am developing a game from scratch or collaborating with a
-						team of developers, I am constantly trying to test the possibilities
-						of games. I believe that video games have the power to bring people
-						together, to challenge our perspectives, and to inspire us to be
-						better. I am dedicated to using my skills and passion to create
-						games that do just that.
-					</p>
-					<p class="about__description lazy loading">
-						Currently, I am attending the
-						<a
-							href="https://www.boisestate.edu/gimm/"
-							target="_blank"
-							class="link"
-							>Games, Interactive Media, & Mobile Technology</a
-						>
-						program at Boise State University. Additionally, I am participating
-						in the
-						<a
-							href="https://microgravityuniversity.jsc.nasa.gov/nasasuits"
-							target="_blank"
-							class="link"
-							>NASA SUITS program</a
-						>
-						with a focus on
-						<strong>Biometric / Spacesuit Data and Live Maps</strong>.
-					</p>
-					<p class="about__description lazy loading">
-						I can't wait to see where my journey in development takes me next.
-					</p>
-				</div>
-				<a href="https://www.linkedin.com/in/carsonstrout/" target="_blank"
-					><div class="about__img-wrapper">
-						<img
-							class="lazy about__img loading"
-							src="assets/img/Portrait.png"
-							alt="Profile picture"
-						/></div
-				></a>
-			</section>
-
-			<!-- Projects -->
-			<section id="projects" class="projects container section">
-				<h2 data-value="Projects" class="projects__title lazy loading">
-					Projects
-				</h2>
-				<p class="projects__description lazy loading">
-					This collection of projects showcases my skills and passion. Each
-					project I look to build upon what I have previously done, and actively
-					apply myself to improve my abilities further.
-
-					<br />
-					<br />
-
-					Currently, I am working on a <strong>VR western roguelike</strong>, a
-					<strong>procedural space flight game</strong>, a
-					<strong>baseball season simulator</strong>, and <strong>more</strong>.
-				</p>
-
-				<!-- Project 1 -->
-				<div class="projects__container">
-					<h3 class="projects__project-title">A Thief's Dilemma</h3>
-					<a
-						href="https://github.com/CarsonStrout/A-Thiefs-Dilemma"
-						target="_blank"
-						><div class="projects__img-wrapper projects__image1">
-							<img
-								class="lazy projects__img loading"
-								src="assets/img/AThief'sDilemma.png"
-								alt="A Thief's Dilemma Project"
-							/></div
-					></a>
-
-					<div class="projects__project projects__content1 loading lazy">
-						<h3 class="projects__project-subtitle">A Thief's Dilemma</h3>
-						<p class="projects__project-description1">
-							<b>Collaborators:</b> Sam Lummus, Kevin Sherwood, Hank Davidson
-						</p>
-						<p class="projects__project-description1">
-							<b>Roles:</b> Project Leader, Lead Programmer, Artist, Animator,
-							3D Modeler, Level Designer, Sound Designer
-						</p>
-						<p class="projects__project-description2">
-							<b>About:</b> A story-based interactive comic book about a master
-							thief who has access to powers related to quantum mechanics. As
-							the thief loses his perception of reality over time, the art
-							style, and the unique games connected to each of the three
-							sections, devolve into further abstract visuals and mechanics.
-						</p>
-						<a
-							class="btn projects__project-btn"
-							href="https://github.com/CarsonStrout/A-Thiefs-Dilemma"
-							target="_blank"
-							>Repository</a
-						>
-						<a
-							class="btn projects__project-btn"
-							href="https://drive.google.com/file/d/1HaYi_ioxv9Fiv7QjSb3F0wWn4iK26pZY/view?usp=sharing"
-							target="_blank"
-							>Artifact Video</a
-						>
 					</div>
+				</div>
+			</div>
+		</nav>
 
-					<!-- Project 2 -->
-					<h3 class="projects__project-title">Dead West</h3>
-					<a href="https://github.com/CarsonStrout/DeadWest" target="_blank"
-						><div class="projects__img-wrapper projects__image2">
-							<img
-								class="lazy projects__img loading"
-								src="assets/img/DeadWest.png"
-								alt="Dead West Project"
-							/></div
-					></a>
-					<div class="projects__project projects__content2 loading lazy">
-						<h3 class="projects__project-subtitle">Dead West</h3>
-						<p class="projects__project-description1">
-							<b>Collaborators:</b> Chase Franklin
-						</p>
-						<p class="projects__project-description1">
-							<b>Roles:</b> 3D Modeler, Programmer
-						</p>
-						<p class="projects__project-description2">
-							<b>About:</b> All aboard the interdimensional train. In this
-							chilling hybrid animation experience, you journey through the
-							cabins of an old-western train, witnessing ghostly passengers
-							carrying out a variety of eerie and dangerous tasks. With built in
-							face tracking capabilities, you can actively move the camera to
-							look at specific areas and events along the way.
-						</p>
-						<a
-							class="btn projects__project-btn"
-							href="https://github.com/CarsonStrout/DeadWest"
-							target="_blank"
-							>Repository</a
-						>
-						<a
-							class="btn projects__project-btn"
-							href="https://drive.google.com/file/d/12Q7eucmwFIlQ50oOr9kwIXYnB8xTB5Z0/view?usp=sharing"
-							target="_blank"
-							>Video</a
-						>
-					</div>
-
-					<!-- Project 3 -->
-					<h3 class="projects__project-title">Jump Monke Jump</h3>
-					<a
-						href="https://github.com/CarsonStrout/JumpMonkeJump"
-						target="_blank"
-						><div class="projects__img-wrapper projects__image3">
-							<img
-								class="lazy projects__img loading"
-								src="assets/img/JumpMonkeJump.PNG"
-								alt="Jump Monke Jump Project"
-							/></div
-					></a>
-					<div class="projects__project projects__content3 loading lazy">
-						<h3 class="projects__project-subtitle">Jump Monke Jump</h3>
-						<p class="projects__project-description1">
-							<b>Collaborators:</b> Chase Franklin, Sam Lummus, Jackson Neal,
-							Kevin Sherwood
-						</p>
-						<p class="projects__project-description1">
-							<b>Roles:</b> Lead Programmer
-						</p>
-						<p class="projects__project-description2">
-							<b>About:</b> An Android application that uses the camera’s AR
-							capabilities to place a competitive, 2-player platformer game in
-							the real world.
-						</p>
-						<a
-							class="btn projects__project-btn"
-							href="https://github.com/CarsonStrout/JumpMonkeJump"
-							target="_blank"
-							>Repository</a
-						>
-						<a
-							class="btn projects__project-btn"
-							href="https://drive.google.com/file/d/1LXjcpI-s62RsSR9_abuUP_bVnK5yJsJj/view"
-							target="_blank"
-							>Artifact Video</a
-						>
-					</div>
-
-					<!-- Project 4 -->
-					<h3 class="projects__project-title">Dusty Frontier</h3>
-					<a
-						href="https://github.com/CarsonStrout/DustyFrontier"
-						target="_blank"
-					>
-						<div class="projects__img-wrapper projects__image4">
-							<img
-								class="lazy projects__img loading"
-								src="assets/img/DustyFrontier.PNG"
-								alt="Dusty Frontier Project"
-							/></div
-					></a>
-
-					<div class="projects__project projects__content4 loading lazy">
-						<h3 class="projects__project-subtitle">Dusty Frontier</h3>
-						<p class="projects__project-description1">
-							<b>Roles:</b> Designer, Programmer, Artist
-						</p>
-						<p class="projects__project-description2">
-							<b>About:</b> A 2D side-scrolling platformer set in the
-							treacherous Wild West. Using just your trusty revolver and a
-							lasso, you must navigate through the unforgiving, lawless
-							frontier.
-						</p>
-						<a
-							class="btn projects__project-btn"
-							href="https://github.com/CarsonStrout/DustyFrontier"
-							target="_blank"
-							>Repository</a
-						>
-					</div>
-
-					<!-- Project 5 -->
-					<h3 class="projects__project-title">Shadow Adventure</h3>
-					<a
-						href="https://github.com/CarsonStrout/ShadowAdventure"
-						target="_blank"
-					>
-						<div class="projects__img-wrapper projects__image5">
-							<img
-								class="lazy projects__img loading"
-								src="assets/img/ShadowAdventure.PNG"
-								alt="Shadow Adventure Project"
-							/>
+		<!-- Hero -->
+		<section id="hero">
+			<div class="container">
+				<div class="hero">
+					<div class="row">
+						<div class="col-md-12 fade1 loading">
+							<h2 data-value="Game Developer">Game Developer</h2>
+							<h2 data-value="Programmer">Programmer</h2>
+							<h2 data-value="& Designer">& Designer</h2>
 						</div>
-					</a>
-					<div class="projects__project projects__content5 loading lazy">
-						<h3 class="projects__project-subtitle">Shadow Adventure</h3>
-						<p class="projects__project-description1">
-							<b>Roles:</b> Designer, Programmer, Artist
+					</div>
+					<div class="row fade2 loading">
+						<div class="col-md-12">
+							<p class="hero_description">
+								A passionate
+								<strong>Game Dev / Programmer / Designer</strong> who
+								specializes in creating immersive, interactive, and accessible
+								experiences for everyone.
+							</p>
+						</div>
+					</div>
+					<div class="row fade2 loading">
+						<div class="col-md-12">
+							<a
+								class="hero_btn btn"
+								href="mailto:carson.strout42@gmail.com"
+								target="_blank"
+								>Contact Me</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- About -->
+		<section id="about">
+			<div class="container fade1 loading">
+				<hr class="section-border" />
+				<div class="about">
+					<div class="row">
+						<div class="col-md-12"><h2 data-value="About">About</h2></div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<p class="about_description">
+								Hey there 👋, I'm Carson - a passionate and team-oriented
+								<strong>game designer, programmer, and storyteller</strong>. I
+								have a strong drive for creating immersive and engaging gaming
+								experiences, and actively want to push the boundaries of the
+								medium. I have honed my skills in a variety of programming
+								languages and game engines, and am always seeking new
+								opportunities to learn and grow.
+							</p>
+							<p class="about_description">
+								Whether I am developing a game from scratch or collaborating
+								with a team of developers, I am constantly trying to test the
+								possibilities of games. I believe that video games have the
+								power to bring people together, to challenge our perspectives,
+								and to inspire us to be better. I am dedicated to using my
+								skills and passion to create games that do just that.
+							</p>
+							<p class="about_description">
+								Currently, I am attending the
+								<a
+									href="https://www.boisestate.edu/gimm/"
+									target="_blank"
+									class="link"
+									>Games, Interactive Media, & Mobile Technology</a
+								>
+								program at Boise State University. Additionally, I am
+								participating in the
+								<a
+									href="https://microgravityuniversity.jsc.nasa.gov/nasasuits"
+									target="_blank"
+									class="link"
+									>NASA SUITS program</a
+								>
+								with a focus on
+								<strong>Biometric / Spacesuit Data and Live Maps</strong>.
+							</p>
+							<p class="about_description">
+								I can't wait to see where my journey in development takes me
+								next.
+							</p>
+						</div>
+						<div class="col-md-4">
+							<a
+								href="https://www.linkedin.com/in/carsonstrout/"
+								target="_blank"
+							>
+								<img
+									src="assets/img/Portrait.png"
+									alt="Carson Strout"
+									class="about_img img-fluid"
+								/>
+							</a>
+						</div>
+					</div>
+					<hr class="section-border" />
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects -->
+		<div class="projects">
+			<section id="games">
+				<div class="container fade1 loading">
+					<hr class="section-border" />
+
+					<div class="games fade1 loading">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<h2 data-value="Projects">Projects</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 text-center projects_description">
+								<div>
+									<p>
+										This collection of projects showcases my skills and passion.
+										Each project I look to build upon what I have previously
+										done, and actively apply myself to improve my abilities
+										further.
+									</p>
+								</div>
+								<div>
+									<p>
+										Currently, I am working on a
+										<strong>VR western roguelike</strong>, a
+										<strong>machine learning project</strong>, a
+										<strong>game mod</strong>, and <strong>more</strong>.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<br />
+
+					<h3>Games</h3>
+
+					<!-- Game Project 1 -->
+					<div class="projects_project fade1 loading">
+						<div class="row">
+							<div class="col-md-6">
+								<a
+									href="https://github.com/CarsonStrout/A-Thiefs-Dilemma"
+									target="_blank"
+								>
+									<img
+										src="assets/img/AThief'sDilemma.png"
+										alt=""
+										class="projects_img img-fluid"
+									/>
+								</a>
+							</div>
+							<div class="col-md-6">
+								<div>
+									<h4 class="projects_project-title text-center">
+										A Thief's Dilemma
+									</h4>
+								</div>
+								<div class="projects_project-description">
+									<p>
+										<b>Collaborators:</b> Sam Lummus, Kevin Sherwood, Hank
+										Davidson
+									</p>
+									<p>
+										<b>Roles:</b> Project Leader, Lead Programmer, Artist,
+										Animator, 3D Modeler, Level Designer, Sound Designer
+									</p>
+									<p>
+										<b>About:</b> A story-based interactive comic book about a
+										master thief who has access to powers related to quantum
+										mechanics. As the thief loses his perception of reality over
+										time, the art style, and the unique games connected to each
+										of the three sections, devolve into further abstract visuals
+										and mechanics.
+									</p>
+								</div>
+								<div class="text-center">
+									<a
+										class="btn projects__project-btn"
+										href="https://github.com/CarsonStrout/A-Thiefs-Dilemma"
+										target="_blank"
+										>Repository</a
+									>
+									<button
+										class="toggleVideo btn"
+										data-target="ThiefsDilemmaVideo"
+									>
+										Show/Hide Video
+									</button>
+								</div>
+								<br />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-2"></div>
+							<div class="col-md-8">
+								<div class="player ratio ratio-16x9" id="ThiefsDilemmaVideo">
+									<iframe
+										src="https://drive.google.com/file/d/1HaYi_ioxv9Fiv7QjSb3F0wWn4iK26pZY/preview"
+										allow="autoplay"
+										allowfullscreen
+									></iframe>
+								</div>
+							</div>
+							<div class="col-md-2"></div>
+						</div>
+						<hr />
+					</div>
+
+					<!-- Game Project 2 -->
+					<div class="projects_project fade1 loading">
+						<div class="row">
+							<div class="col-md-6">
+								<a
+									href="https://papadaplus.itch.io/temporal-tides"
+									target="_blank"
+								>
+									<img
+										src="assets/img/TemporalTides.png"
+										alt=""
+										class="projects_img img-fluid"
+									/>
+								</a>
+							</div>
+							<div class="col-md-6">
+								<br />
+								<h4 class="projects_project-title text-center">
+									Temporal Tides
+								</h4>
+								<div class="projects_project-description">
+									<p>
+										<b>Collaborators:</b> Konner Pierce, Heaven Rust, Chase
+										Franklin, Jacob Thrall
+									</p>
+									<p>
+										<b>Music and Sounds:</b> Ethan Bessette, Bria Eutsey, Quinne
+										Houck, Freddie Oliveira-Chevres, Angelica Ramos
+									</p>
+									<p>
+										<b>Roles:</b> VFX Artist, Programmer, Gameplay
+										Implementation
+									</p>
+									<p>
+										<b>About:</b> Navigate the treacherous waters of a
+										paradoxical universe aboard a ship adjacent to a massive
+										black hole. Made for a game jam, Temporal Tides explores the
+										theme of paradoxes by having the player's actions be
+										simultaneously reflected and opposed by the echoes from an
+										alternate timeline.
+									</p>
+								</div>
+								<div class="text-center">
+									<a
+										class="btn projects__project-btn"
+										href="https://papadaplus.itch.io/temporal-tides"
+										target="_blank"
+										>Itch.io Page</a
+									>
+								</div>
+								<br />
+							</div>
+						</div>
+						<hr />
+					</div>
+
+					<!-- Game Project 3 -->
+					<div class="projects_project fade1 loading">
+						<div class="row">
+							<div class="col-md-6">
+								<a class="toggleVideo" data-target="SixShooterVideo">
+									<img
+										src="assets/img/SixShooter.png"
+										alt=""
+										class="projects_img img-fluid"
+									/>
+								</a>
+							</div>
+							<div class="col-md-6">
+								<br />
+								<h4 class="projects_project-title text-center">Six Shooter</h4>
+								<div class="projects_project-description">
+									<p><b>Roles:</b> Designer, Programmer, Artist</p>
+									<p>
+										<b>About:</b> A VR western shooter game where you play as a
+										gunslinger who must defend their town from a horde of
+										bandits. Currently, the game features a target practice
+										mode, as well as a wave-based survival mode. Still in
+										development, with plans for more modes, including the
+										primary roguelike mode.
+									</p>
+								</div>
+								<div class="text-center">
+									<button class="toggleVideo btn" data-target="SixShooterVideo">
+										Show/Hide Video
+									</button>
+								</div>
+								<br />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-2"></div>
+							<div class="col-md-8">
+								<div class="player ratio ratio-16x9" id="SixShooterVideo">
+									<iframe
+										src="https://drive.google.com/file/d/1HaYi_ioxv9Fiv7QjSb3F0wWn4iK26pZY/preview"
+										allow="autoplay"
+										allowfullscreen
+									></iframe>
+								</div>
+							</div>
+							<div class="col-md-2"></div>
+						</div>
+						<hr />
+					</div>
+
+					<!-- Game Project 4 -->
+					<div class="projects_project fade1 loading">
+						<div class="row">
+							<div class="col-md-6">
+								<a
+									href="https://github.com/CarsonStrout/JumpMonkeJump"
+									target="_blank"
+								>
+									<img
+										src="assets/img/JumpMonkeJump.PNG"
+										alt=""
+										class="projects_img img-fluid"
+									/>
+								</a>
+							</div>
+							<div class="col-md-6">
+								<br />
+								<div>
+									<h4 class="projects_project-title text-center">
+										Jump Monke Jump
+									</h4>
+								</div>
+								<div class="projects_project-description">
+									<p>
+										<b>Collaborators:</b> Chase Franklin, Sam Lummus, Jackson
+										Neal, Kevin Sherwood
+									</p>
+									<p><b>Roles:</b> Lead Programmer</p>
+									<p>
+										<b>About:</b> An Android application that uses the camera’s
+										AR capabilities to place a competitive, 2-player platformer
+										game in the real world.
+									</p>
+								</div>
+								<div class="text-center">
+									<a
+										class="btn projects__project-btn"
+										href="https://github.com/CarsonStrout/JumpMonkeJump"
+										target="_blank"
+										>Repository</a
+									>
+									<button
+										class="toggleVideo btn"
+										data-target="JumpMonkeJumpVideo"
+									>
+										Show/Hide Video
+									</button>
+								</div>
+								<br />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-2"></div>
+							<div class="col-md-8">
+								<div class="player ratio ratio-16x9" id="JumpMonkeJumpVideo">
+									<iframe
+										src="https://drive.google.com/file/d/1LXjcpI-s62RsSR9_abuUP_bVnK5yJsJj/preview"
+										allow="autoplay"
+										allowfullscreen
+									></iframe>
+								</div>
+							</div>
+							<div class="col-md-2"></div>
+						</div>
+					</div>
+					<hr />
+				</div>
+			</section>
+
+			<section id="web">
+				<div class="container fade1 loading">
+					<div class="row">
+						<div class="col-md-12">
+							<h3>Websites</h3>
+						</div>
+					</div>
+
+					<div class="projects_project fade1 loading">
+						<div class="row">
+							<div class="col-md-6">
+								<a
+									href="https://carsonstrout.github.io/WesternData/"
+									target="_blank"
+								>
+									<img
+										src="assets/img/westernCollage.png"
+										alt=""
+										class="projects_img img-fluid"
+									/>
+								</a>
+							</div>
+							<div class="col-md-6">
+								<div>
+									<h4 class="projects_project-title text-center">
+										Cinema's Wild Frontier: Analyzing the West through Data
+									</h4>
+								</div>
+								<div class="projects_project-description">
+									<p>
+										<b>About:</b> A narrative website that analyzes the history
+										of Western films, exploring its evolution, themes,
+										popularity, and cultural impact over the decades. The
+										website features a variety of interactive data
+										visualizations, as well as fitting styling and design.
+									</p>
+								</div>
+								<div class="row text-center">
+									<div class="col-md-12">
+										<a
+											class="btn projects__project-btn"
+											href="https://carsonstrout.github.io/WesternData/"
+											target="_blank"
+											>Visit Site</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr />
+				</div>
+			</section>
+
+			<section id="other">
+				<div class="container fade1 loading">
+					<div class="row">
+						<div class="col-md-12">
+							<h3>Other</h3>
+						</div>
+					</div>
+
+					<div class="projects_project fade1 loading">
+						<div class="row">
+							<div class="col-md-6">
+								<a
+									href="https://github.com/CarsonStrout/DeadWest"
+									target="_blank"
+								>
+									<img
+										src="assets/img/DeadWest.png"
+										alt=""
+										class="projects_img img-fluid"
+									/>
+								</a>
+							</div>
+							<div class="col-md-6">
+								<div>
+									<h4 class="projects_project-title text-center">Dead West</h4>
+								</div>
+								<div class="projects_project-description">
+									<p><b>Collaborators:</b> Chase Franklin</p>
+									<p><b>Roles:</b> 3D Modeler, Programmer</p>
+									<p>
+										<b>About:</b> All aboard the interdimensional train. In this
+										chilling hybrid animation experience, you journey through
+										the cabins of an old-western train, witnessing ghostly
+										passengers carrying out a variety of eerie and dangerous
+										tasks. With built in face tracking capabilities, you can
+										actively move the camera to look at specific areas and
+										events along the way.
+									</p>
+								</div>
+								<div class="row text-center">
+									<div class="col-md-12">
+										<a
+											class="btn projects__project-btn"
+											href="https://github.com/CarsonStrout/DeadWest"
+											target="_blank"
+											>Repository</a
+										>
+										<button class="toggleVideo btn" data-target="DeadWestVideo">
+											Show/Hide Video
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-2"></div>
+							<div class="col-md-8">
+								<div class="player ratio ratio-16x9" id="DeadWestVideo">
+									<iframe
+										src="https://drive.google.com/file/d/12Q7eucmwFIlQ50oOr9kwIXYnB8xTB5Z0/preview"
+										allow="autoplay"
+										allowfullscreen
+									></iframe>
+								</div>
+							</div>
+							<div class="col-md-2"></div>
+						</div>
+					</div>
+					<hr class="section-border" />
+				</div>
+			</section>
+		</div>
+
+		<!-- Contact -->
+		<section id="contact">
+			<div class="contact container text-center fade1 loading">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 data-value="Get in Contact">Get in Contact</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<p class="contact_description">
+							If you have any business inquiries, or simply want to reach out,
+							feel free to send me an email. I will respond as soon as possible.
 						</p>
-						<p class="projects__project-description2">
-							<b>About:</b> A quick platformer that challenges the player to
-							jump and dash to collect the orbs necessary to progress to the
-							next level. With each new level comes a new mechanic, from
-							rewinding time to freezing moving platforms, testing your skills
-							and reflexes.
-						</p>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
 						<a
-							class="btn projects__project-btn"
-							href="https://github.com/CarsonStrout/ShadowAdventure"
+							class="contact_btn btn"
+							href="mailto:carson.strout42@gmail.com"
 							target="_blank"
-							>Repository</a
+							>Reach Out</a
 						>
 					</div>
 				</div>
-			</section>
-
-			<!-- Contact -->
-			<section id="contact" class="contact container section">
-				<h2 data-value="Get In Contact" class="contact__title lazy loading">
-					Get In Contact
-				</h2>
-				<p class="contact__description lazy loading">
-					If you have any business inquiries or simply want to reach out, feel
-					free to send me an email. I will respond as soon as possible.
-				</p>
-				<div class="lazy loading">
-					<a
-						class="contact__btn btn"
-						href="mailto:carson.strout42@gmail.com"
-						target="_blank"
-						>Reach Out</a
-					>
+				<br />
+				<div class="row">
+					<div class="col-md-12">
+						<a
+							class="contact_extra btn"
+							href="https://github.com/CarsonStrout"
+							target="_blank"
+							>GitHub</a
+						>
+						<a
+							class="contact_extra btn"
+							href="https://www.linkedin.com/in/carsonstrout/"
+							target="_blank"
+							>LinkedIn</a
+						>
+					</div>
 				</div>
-				<div class="lazy loading">
-					<a
-						class="contact__extra btn"
-						href="https://github.com/CarsonStrout"
-						target="_blank"
-						>GitHub</a
-					>
-					<a
-						class="contact__extra btn"
-						href="https://www.linkedin.com/in/carsonstrout/"
-						target="_blank"
-						>LinkedIn</a
-					>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<section id="footer">
+			<div class="container">
+				<div class="text-center footer_title">
+					<p>~ Carson Strout ~</p>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<!-- Footer -->
-			<section id="footer">
-				<footer class="footer container section">
-					<h3 class="footer__title">~ Carson Strout ~</h3>
-				</footer>
-			</section>
-
-			<div class="noise-overlay"></div>
-		</main>
+		<div class="noise-overlay"></div>
 	</body>
 </html>
