@@ -1,35 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
-	const fadeObjs = document.querySelectorAll(".fade1");
+document.addEventListener("DOMContentLoaded", function () {
+	const fadeInSections = document.querySelectorAll(".fade-in-section");
 
-	const observer = new IntersectionObserver((entries, observer) => {
+	const appearOnScroll = new IntersectionObserver(function (
+		entries,
+		appearOnScroll
+	) {
 		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				let obj = entry.target;
-				obj.classList.remove("loading");
-				obj.classList.add("loaded");
-				observer.unobserve(obj);
+			if (!entry.isIntersecting) {
+				return;
+			} else {
+				entry.target.classList.add("appear");
+				appearOnScroll.unobserve(entry.target);
 			}
 		});
 	});
 
-	fadeObjs.forEach((obj) => {
-		observer.observe(obj);
-	});
-
-	const fadeObjs2 = document.querySelectorAll(".fade2");
-
-	const observer2 = new IntersectionObserver((entries, observer2) => {
-		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				let obj = entry.target;
-				obj.classList.remove("loading");
-				obj.classList.add("loaded-slow");
-				observer2.unobserve(obj);
-			}
-		});
-	});
-
-	fadeObjs2.forEach((obj) => {
-		observer2.observe(obj);
+	fadeInSections.forEach((section) => {
+		appearOnScroll.observe(section);
 	});
 });
