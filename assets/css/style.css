@@ -22,7 +22,7 @@
 
 html,
 body {
-	background-color: #2e2e2e;
+	background-color: #222;
 	font-family: "Montserrat", sans-serif;
 	color: #fffff0;
 	overflow-x: hidden;
@@ -55,9 +55,9 @@ h3 {
 }
 
 .player {
-	border: 1px solid #222;
+	border: 1px solid #111;
 	border-radius: 0.5rem;
-	box-shadow: 5px 5px 5px #222;
+	box-shadow: 5px 5px 5px #111;
 	overflow: hidden;
 	z-index: 1;
 	display: none;
@@ -76,11 +76,11 @@ section {
 
 /* Navbar */
 nav {
-	box-shadow: 0 5px 10px #222;
+	box-shadow: 0 5px 10px #111;
 }
 
 .bg_dark {
-	background-color: #2e2e2e;
+	background-color: #222;
 }
 
 .nav_text {
@@ -134,7 +134,7 @@ nav {
 	-webkit-user-select: none;
 	touch-action: manipulation;
 
-	background: linear-gradient(to left, #2e2e2e 50%, #0d9488 50%) right;
+	background: linear-gradient(to left, #222 50%, #0d9488 50%) right;
 	background-size: 200%;
 	transition: 0.3s ease-out;
 }
