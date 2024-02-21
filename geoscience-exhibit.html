@@ -42,7 +42,7 @@
 		></script>
 		<script src="assets/JS/appear.js" type="text/javascript"></script>
 
-		<title>Carson Strout | Jump Monke Jump</title>
+		<title>Carson Strout | Geoscience Exhibit</title>
 	</head>
 	<body>
 		<!-- NavBar -->
@@ -112,8 +112,8 @@
 				<div class="col-md-12 project_backdrop_container">
 					<div class="project_backdrop_container2">
 						<img
-							src="assets/img/JumpMonkeJump.PNG"
-							alt="Jump Monke Jump"
+							src="assets/img/GeoScienceExhibit/Exhibit.png"
+							alt="Geoscience Exhibit"
 							class="project_backdrop img-fluid"
 							loading="lazy"
 						/>
@@ -123,20 +123,17 @@
 
 			<div class="row project_details">
 				<div class="col-md-12 text-center">
-					<h2 class="project_title" data-value="Jump Monke Jump">
-						Jump Monke Jump
+					<h2 class="project_title" data-value="Geoscience Exhibit">
+						Geoscience Exhibit
 					</h2>
-					<p>
-						An Android application that uses the camera’s AR capabilities to
-						place a competitive, 2-player platformer game in the real world.
-					</p>
+					<p>Detecting Invasive Species in Sagebrush Systems</p>
 				</div>
 
 				<hr class="section-border" />
 
 				<div class="row">
 					<h3>Roles</h3>
-					<p>Lead Programmer</p>
+					<p>Programmer • UI • Data Conversion</p>
 				</div>
 
 				<hr />
@@ -157,6 +154,30 @@
 							<img
 								alt="Unity"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
+								class="project_tech img-fluid"
+								loading="lazy"
+							/>
+						</div>
+						<div class="col">
+							<img
+								alt="Metashape"
+								src="https://downloadlynet.ir/wp-content/uploads/2020/03/Agisoft-Metashape.png"
+								class="project_tech img-fluid"
+								loading="lazy"
+							/>
+						</div>
+						<div class="col">
+							<img
+								alt="QGIS"
+								src="https://upload.wikimedia.org/wikipedia/commons/7/77/Qgis-icon-3.0.png"
+								class="project_tech img-fluid"
+								loading="lazy"
+							/>
+						</div>
+						<div class="col">
+							<img
+								alt="Blender"
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg"
 								class="project_tech img-fluid"
 								loading="lazy"
 							/>
@@ -185,16 +206,17 @@
 				<div class="col-md-12">
 					<h3>Overview</h3>
 					<p>
-						Using an Android phone or tablet's AR functionality, two players
-						take turns competing in a 2D platformer that is placed in real world
-						space. If both players are able to complete the level, a player is
-						then allowed to place a randomized obstacle to make the game more
-						difficult to complete.
-
-						<br /><br />
-
-						The goal is to make the game too hard for the opposing player to
-						pass, but still doable for yourself, as to avoid a loss or tie.
+						This application has been developed for an exhibit at the 2024
+						<a
+							href="https://personalstructures.com/"
+							target="_blank"
+							class="link"
+							>Personal Structures Exhibition</a
+						>
+						in Venice, Italy. It displays geological drone data gathered by
+						Boise State University's Human-Environment Systems department in an
+						interactive manner. Exhibitors are able to immerse themselves in the
+						environment while learning about invasive plant species in Idaho.
 					</p>
 				</div>
 
@@ -204,7 +226,7 @@
 					<h3 class="pb-3">Showcase</h3>
 
 					<!-- Video -->
-					<div class="row pb-3">
+					<!-- <div class="row pb-3">
 						<div class="col-md-2"></div>
 						<div class="col-md-8">
 							<div class="project_player ratio ratio-16x9">
@@ -217,34 +239,59 @@
 							</div>
 						</div>
 						<div class="col-md-2"></div>
-					</div>
+					</div> -->
 
 					<div class="row pb-3">
 						<div class="col-md-12">
-							<h4><strong>Gameplay</strong></h4>
+							<h4><strong> Drone Data </strong></h4>
 							<p>
-								Inspired by games like Ultimate Chicken Horse and Mario Maker,
-								Jump Monke Jump is a competitive platformer game that forces the
-								players to make the game more difficult for the other player.
+								For the exhibit, we used clound point data collected from a
+								drone to create a 3D model of the environment. This model was
+								then converted into a Unity project to be displayed on a large
+								screen at the exhibit.
 
 								<br /><br />
 
-								Quickly, the game becomes a chaotic battle of wits and skill as
-								the players try to outsmart and outmaneuver each other.
+								In the project, users are able to navigate the environment and
+								learn about the invasive species that are present in the area. A
+								slider also allows users to view the environmental changes at
+								different times of the year.
 							</p>
 						</div>
 					</div>
 
 					<div class="row pb-3">
-						<div class="col-md-12">
-							<h4><strong>Visuals</strong></h4>
+						<div class="col-md-6 order-md-0">
+							<h4><strong> Instructions </strong></h4>
 							<p>
-								The game's visuals were designed to be simple and visually
-								appealing, with a goal to make it look as if it were hand-drawn.
-								This allowed for an aesthetic that benefitted from the augmented
-								reality aspect of the game, as it made it feel more like it was
-								actually in the real world.
+								To help users navigate the exhibit, we created a set of
+								instructions that are displayed on a screen next to the exhibit.
+								These instructions provide a brief overview of the exhibit and
+								how to interact with it.
+
+								<br /><br />
+
+								Once the screen is tapped, gyroscopic camera controls are
+								enabled, and the user can press the forward button to move
+								within the environment.
+
+								<br /><br />
+
+								As the project is intended for a audience, the application will
+								reset to its default state after a period of inactivity, and
+								eventually back to the main menu.
 							</p>
+						</div>
+						<div class="col-md-1">
+							<hr class="division-border" />
+						</div>
+						<div class="col-md-5 order-md-1">
+							<img
+								src="assets/img/GeoScienceExhibit/Instructions.png"
+								alt="Instructions"
+								class="project_img img-fluid"
+								loading="lazy"
+							/>
 						</div>
 					</div>
 				</div>
@@ -254,16 +301,18 @@
 				<div class="row">
 					<h3>Challenges</h3>
 					<p>
-						One of the biggest challenges was creating the AR functionality.
-						There were a lot of technical hurdles that needed to be overcome to
-						make sure that the game was able to be placed in the real world,
-						without breaking the physics of the game.
+						The biggest issue we ran into in this project was converting the
+						cloud point data into a 3D model. This required various applications
+						and the use of Blender to create the final model. We also had to do
+						a lot of optimization to ensure that the project would run smoothly
+						on the exhibit's hardware.
 
 						<br /><br />
 
-						Additionally, we had to focus on making sure the game was
-						competitive and fun. This required a lot of testing and iteration,
-						but we luckily found a formula that worked well.
+						Getting a shader to effectively transition between the different
+						periods of the year was also a challenge. We had to ensure that the
+						transition was smooth and that the user interface would not
+						interfere with the user's ability to navigate the environment.
 					</p>
 				</div>
 				<hr class="section-border" />
@@ -274,7 +323,7 @@
 			<div class="col-md-12 text-center">
 				<a
 					class="btn projects__project-btn"
-					href="https://github.com/CarsonStrout/JumpMonkeJump"
+					href="https://github.com/cartertjones/geoscience-exhibit"
 					target="_blank"
 					>Repository</a
 				>

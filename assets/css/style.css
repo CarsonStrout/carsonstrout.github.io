@@ -109,6 +109,10 @@ nav {
 	border: 2px solid #2e2e2e;
 }
 
+.dropdown-personal {
+	text-decoration: underline;
+}
+
 .dropdown-item {
 	color: #2e2e2e;
 	transition: 0.3s;
