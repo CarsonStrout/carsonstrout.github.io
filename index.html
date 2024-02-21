@@ -45,7 +45,7 @@
 		></script>
 		<script src="assets/JS/appear.js" type="text/javascript"></script>
 
-		<title>Carson Strout - Game Developer Portfolio</title>
+		<title>Carson Strout | Game Developer Portfolio</title>
 	</head>
 	<body>
 		<!-- NavBar -->
@@ -54,11 +54,11 @@
 				<a class="navbar-brand" href="#">
 					<img
 						src="assets/img/favicon.png"
-						width="25"
-						height="30"
+						width="20"
 						class="d-inline-block align-top"
 						alt="Icon"
 					/>
+					<span class="nav_name">{ CARSON STROUT }</span>
 				</a>
 				<button
 					class="navbar-toggler navbar-dark"
@@ -72,7 +72,7 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav">
+					<div class="navbar-nav ms-auto">
 						<a class="nav-link nav_text" href="#about">About</a>
 						<li class="nav-item dropdown">
 							<a
@@ -97,12 +97,7 @@
 							</ul>
 						</li>
 						<a class="nav-link nav_text" href="#contact">Contact</a>
-						<a
-							class="nav-link nav_text"
-							href="assets/CarsonStroutDeveloper.pdf"
-							target="_blank"
-							>Resume</a
-						>
+						<a class="nav-link nav_text" href="resume.html">Resume</a>
 					</div>
 				</div>
 			</div>
@@ -148,11 +143,25 @@
 			<div class="container fade1 loading">
 				<hr class="section-border" />
 				<div class="about">
-					<div class="row">
+					<div class="row text-center">
 						<div class="col-md-12"><h2 data-value="About">About</h2></div>
 					</div>
+					<br />
 					<div class="row">
-						<div class="col-md-8">
+						<div class="col-md-4 order-md-1">
+							<a
+								href="https://www.linkedin.com/in/carsonstrout/"
+								target="_blank"
+							>
+								<img
+									src="assets/img/Portrait.png"
+									alt="Carson Strout"
+									class="about_img img-fluid"
+									loading="lazy"
+								/>
+							</a>
+						</div>
+						<div class="col-md-8 order-md-0">
 							<p class="about_description">
 								Hey there 👋, I'm Carson - a passionate and team-oriented
 								<strong>game designer, programmer, and storyteller</strong>. I
@@ -194,21 +203,8 @@
 								next.
 							</p>
 						</div>
-						<div class="col-md-4">
-							<a
-								href="https://www.linkedin.com/in/carsonstrout/"
-								target="_blank"
-							>
-								<img
-									src="assets/img/Portrait.png"
-									alt="Carson Strout"
-									class="about_img img-fluid"
-									loading="lazy"
-								/>
-							</a>
-						</div>
 					</div>
-					<hr class="section-border" />
+					<!-- <hr class="section-border" /> -->
 				</div>
 			</div>
 		</section>
@@ -255,10 +251,7 @@
 					<div class="projects_project fade1 loading">
 						<div class="row">
 							<div class="col-md-6">
-								<a
-									href="https://github.com/CarsonStrout/A-Thiefs-Dilemma"
-									target="_blank"
-								>
+								<a href="a-thiefs-dilemma.html">
 									<img
 										src="assets/img/AThief'sDilemma.png"
 										alt=""
@@ -269,9 +262,11 @@
 							</div>
 							<div class="col-md-6">
 								<div>
-									<h4 class="projects_project-title text-center">
-										A Thief's Dilemma
-									</h4>
+									<a href="a-thiefs-dilemma.html" class="link"
+										><h4 class="projects_project-title text-center">
+											A Thief's Dilemma
+										</h4></a
+									>
 								</div>
 								<div class="projects_project-description">
 									<p>
@@ -651,7 +646,6 @@
 							<div class="col-md-2"></div>
 						</div>
 					</div>
-					<hr class="section-border" />
 				</div>
 			</section>
 		</div>
@@ -659,11 +653,14 @@
 		<!-- Contact -->
 		<section id="contact">
 			<div class="contact container text-center fade1 loading">
+				<hr class="section-border" />
+
 				<div class="row">
 					<div class="col-md-12">
 						<h2 data-value="Get in Contact">Get in Contact</h2>
 					</div>
 				</div>
+				<br />
 				<div class="row">
 					<div class="col-md-2"></div>
 					<div class="col-md-8">
