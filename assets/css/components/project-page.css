@@ -46,6 +46,22 @@
 	color: #e8e5cf;
 }
 
+.project_info {
+	color: #fffff0;
+	font-weight: 600;
+}
+
+.project_tech {
+	max-width: 100px;
+}
+
+.project_img {
+	border-radius: 1rem;
+	border: 1px solid #d4af37;
+	margin-bottom: 1rem;
+	box-shadow: 5px 5px 5px #111;
+}
+
 h2 {
 	font-size: var(--text-3xl);
 }
