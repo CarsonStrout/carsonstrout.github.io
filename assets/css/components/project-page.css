@@ -53,6 +53,7 @@
 
 .project_tech {
 	max-width: 100px;
+	width: 100%;
 }
 
 .project_img {
@@ -68,6 +69,14 @@ h2 {
 
 h3 {
 	font-size: var(--text-2xl);
+}
+
+h4 {
+	font-size: var(--text-xl);
+}
+
+p {
+	font-size: var(--text-sm);
 }
 
 .project_player {
@@ -86,6 +95,10 @@ h3 {
 
 	h3 {
 		font-size: var(--text-2xl);
+	}
+
+	h4 {
+		font-size: var(--text-xl);
 	}
 
 	.project p {
@@ -117,6 +130,10 @@ h3 {
 		font-size: var(--text-3xl);
 	}
 
+	h4 {
+		font-size: var(--text-2xl);
+	}
+
 	.project p {
 		font-size: var(--text-lg);
 	}
@@ -130,6 +147,10 @@ h3 {
 
 	h3 {
 		font-size: var(--text-4xl);
+	}
+
+	h4 {
+		font-size: var(--text-3xl);
 	}
 
 	.project p {
