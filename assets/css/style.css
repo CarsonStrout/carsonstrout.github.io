@@ -106,6 +106,7 @@ nav {
 
 .dropdown-menu {
 	background-color: #222;
+	box-shadow: 0 5px 10px #111;
 	border: 2px solid #111;
 }
 
