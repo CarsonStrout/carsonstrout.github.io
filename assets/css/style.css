@@ -105,16 +105,17 @@ nav {
 }
 
 .dropdown-menu {
-	background-color: #fffff0;
-	border: 2px solid #2e2e2e;
+	background-color: #222;
+	border: 2px solid #111;
 }
 
 .dropdown-personal {
 	text-decoration: underline;
+	color: #fffff0;
 }
 
 .dropdown-item {
-	color: #2e2e2e;
+	color: #fffff0;
 	transition: 0.3s;
 }
 
