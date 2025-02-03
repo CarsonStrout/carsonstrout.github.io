@@ -25,6 +25,11 @@ h4 {
 .resume_dates {
 	font-size: var(--text-xs);
 	float: right;
+	font-weight: bold;
+}
+
+.resume_description {
+	font-size: var(--text-sm);
 }
 
 ul {
