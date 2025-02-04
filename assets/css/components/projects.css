@@ -41,6 +41,11 @@
 	font-size: var(--text-sm);
 }
 
+.projects_collaborators {
+	font-style: italic;
+	font-size: var(--text-sm);
+}
+
 /* Games */
 
 /* Web */

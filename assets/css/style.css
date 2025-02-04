@@ -199,6 +199,27 @@ nav {
 	z-index: 10;
 }
 
+.carousel {
+	position: relative;
+}
+
+.carousel img {
+	max-height: 400px;
+	object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	width: 50px; /* Increase width */
+	height: 50px; /* Increase height */
+}
+
+.carousel-indicators {
+	bottom: -30px;
+	margin-top: 10px;
+	text-align: center;
+}
+
 .link {
 	transition: 0.3s;
 }

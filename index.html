@@ -45,6 +45,7 @@
 		></script>
 		<script src="assets/JS/appear.js" type="text/javascript"></script>
 		<script src="assets/JS/hoverColor.js" type="text/javascript"></script>
+		<script src="assets/JS/scroll.js" type="text/javascript"></script>
 
 		<title>Carson Strout | Game Developer Portfolio</title>
 	</head>
@@ -87,9 +88,15 @@
 							</a>
 							<ul class="dropdown-menu text-center">
 								<li>
+									<a class="dropdown-item" href="#projects"
+										>Favorite Projects</a
+									>
+								</li>
+								<hr />
+								<li>
 									<a class="dropdown-item" href="#client">Client Projects</a>
 								</li>
-								<br />
+								<hr />
 								<li class="dropdown-personal text-center">Personal Projects</li>
 								<li>
 									<a class="dropdown-item" href="#games">Games</a>
@@ -220,7 +227,7 @@
 
 		<!-- Projects -->
 		<div class="projects">
-			<section id="client">
+			<section id="projects">
 				<div class="container fade1 loading">
 					<hr class="section-border" />
 
@@ -260,217 +267,341 @@
 								</div>
 							</div>
 						</div>
+						<hr />
 					</div>
+
+					<br />
 
 					<div class="row">
 						<div class="col-md-12 text-center fade1 loading">
-							<h3>Client Projects</h3>
+							<h3>Favorite Projects</h3>
 						</div>
 					</div>
 
-					<!-- Client Project 1 -->
-					<div class="projects_project fade1 loading">
-						<div class="row">
-							<div class="col-md-6">
-								<a href="idagem.html">
+					<div
+						id="featuredProjectsCarousel"
+						class="carousel slide text-center"
+						data-bs-ride="carousel"
+					>
+						<div class="carousel-indicators">
+							<button
+								type="button"
+								data-bs-target="#featuredProjectsCarousel"
+								data-bs-slide-to="0"
+								class="active"
+								aria-current="true"
+								aria-label="Slide 1"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#featuredProjectsCarousel"
+								data-bs-slide-to="1"
+								aria-label="Slide 2"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#featuredProjectsCarousel"
+								data-bs-slide-to="2"
+								aria-label="Slide 3"
+							></button>
+						</div>
+
+						<div class="carousel-inner">
+							<!-- Project 1 -->
+							<div class="carousel-item active">
+								<a href="#" data-target="idagem">
 									<img
 										src="assets/img/IdaGem.png"
+										class="projects_img img-fluid"
 										alt="IdaGem"
-										class="projects_img img-fluid"
-										loading="lazy"
 									/>
 								</a>
-							</div>
-							<div class="col-md-6">
-								<div>
-									<a href="idagem.html" class="link">
-										<h4 class="projects_project-title text-center">IdaGem</h4>
-									</a>
-								</div>
-								<div class="projects_project-description">
+								<div class="carousel-caption-below">
 									<p>
-										<b>Collaborators:</b> GIMM Works, Wassmuth Center for Human
-										Rights, Department of Homeland Security
-									</p>
-									<p><b>Roles:</b> Project Lead, Programmer, Designer</p>
-									<p>
-										<b>About:</b> IdaGem is a gamified 4th-grade history
-										curriculum designed in collaboration with Idaho teachers. It
-										transforms traditional lessons into an interactive
-										experience, with extensive lessions, students exploring a
-										virtual Idaho Anne Frank Memorial, and completing
-										educational minigames. Aligned with state standards and
-										currently used in classrooms, IdaGem is also being submitted
-										for an educational game award.
+										<b>IdaGem</b>
+										<br />
+										Gamified 4th-grade history curriculum.
 									</p>
 								</div>
-								<div class="row text-center">
-									<div class="col-md-12">
-										<a
-											class="btn projects__project-btn"
-											href="https://idagem.org/"
-											target="_blank"
-											>Website</a
-										>
-									</div>
-								</div>
 							</div>
-						</div>
-						<hr />
-					</div>
-					<!-- Client Project 2 -->
-					<div class="projects_project fade1 loading">
-						<div class="row">
-							<div class="col-md-6">
-								<a href="geoscience-exhibit.html">
+
+							<!-- Project 2 -->
+							<div class="carousel-item">
+								<a href="#" data-target="six-shooter">
 									<img
-										src="assets/img/GeoScienceExhibit/Exhibit.png"
-										alt="Geoscience Exhibit"
+										src="assets/img/SixShooter.png"
 										class="projects_img img-fluid"
-										loading="lazy"
+										alt="Six Shooter"
 									/>
 								</a>
+								<div class="carousel-caption-below">
+									<p>
+										<b>Six Shooter</b>
+										<br />
+										Old-school VR roguelike inspired by Spaghetti Westerns.
+									</p>
+								</div>
 							</div>
-							<div class="col-md-6">
-								<div>
-									<a href="geoscience-exhibit.html" class="link">
-										<h4 class="projects_project-title text-center">
-											Geoscience Exhibit
-										</h4>
-									</a>
-								</div>
-								<div class="projects_project-description">
+
+							<!-- Project 3 -->
+							<div class="carousel-item">
+								<a href="#" data-target="cinemas-wild-frontier">
+									<img
+										src="assets/img/westernCollage.png"
+										class="projects_img img-fluid"
+										alt="Western Data"
+									/>
+								</a>
+								<div class="carousel-caption-below">
 									<p>
-										<b>Collaborators:</b> Dr. Megan Cattau, Mae Bridgeman, Kaj
-										Forney, Chase Franklin, Mitchell Oliarny, Jayden Quallio
+										<b>Cinema's Wild Frontier</b>
+										<br />
+										Website analyzing the history of Western films.
 									</p>
-									<p><b>Roles:</b> Programmer, UI, Data Conversion</p>
-									<p>
-										<b>About:</b> This application has been developed for an
-										exhibit at the 2024
-										<a
-											href="https://personalstructures.com/"
-											target="_blank"
-											class="link"
-											>Personal Structures Exhibition</a
-										>
-										in Venice, Italy. It displays geological drone data gathered
-										by Boise State University's Human-Environment Systems
-										department in an interactive manner. Exhibitors are able to
-										immerse themselves in the environment while learning about
-										invasive plant species in Idaho.
-									</p>
-								</div>
-								<div class="row text-center">
-									<div class="col-md-12">
-										<a
-											class="btn projects__project-btn"
-											href="https://github.com/cartertjones/geoscience-exhibit"
-											target="_blank"
-											>Repository</a
-										>
-									</div>
 								</div>
 							</div>
 						</div>
-						<hr />
-					</div>
-					<!-- Client Project 3 -->
-					<div class="projects_project fade1 loading">
-						<div class="row">
-							<div class="col-md-6">
-								<img
-									src="assets/img/Vocab_Verse.png"
-									alt="Vocab Verse"
-									class="projects_img img-fluid"
-									loading="lazy"
-								/>
-							</div>
-							<div class="col-md-6">
-								<div>
-									<h4 class="projects_project-title text-center">
-										<strong>Vocab Verse</strong>
-									</h4>
-								</div>
-								<div class="projects_project-description">
-									<p>
-										<b>Collaborators:</b> Jacob Thrall, Konner Pierce, Rachael
-										Nordby, Kaj Forney, Chase Franklin
-									</p>
-									<p><b>Roles:</b> Lead Programmer</p>
-									<p>
-										<b>About:</b> Vocab Verse is an iOS app designed to help
-										students with dyslexia and autism improve word recognition
-										through interactive, image-based learning. Built in Swift,
-										it reinforces vocabulary comprehension with engaging visuals
-										and structured exercises. Developed with a focus on
-										accessibility, the app is currently being submitted for an
-										Apple award.
-									</p>
-								</div>
-								<div class="text-center">
-									<button class="toggleVideo btn" data-target="VocabVerseVid">
-										Show/Hide Video
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-2"></div>
-						<div class="col-md-8">
-							<div class="player ratio ratio-16x9" id="VocabVerseVid">
-								<iframe
-									src="https://www.youtube.com/embed/n9mUI1x46DA?si=roSx5SHykslPYTPU"
-									title="YouTube video player"
-									allow="autoplay"
-									allowfullscreen
-									loading="lazy"
-								></iframe>
-							</div>
-						</div>
-						<div class="col-md-2"></div>
+
+						<!-- Controls -->
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#featuredProjectsCarousel"
+							data-bs-slide="prev"
+						>
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#featuredProjectsCarousel"
+							data-bs-slide="next"
+						>
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Next</span>
+						</button>
 					</div>
 
 					<hr />
-					<!-- Client Project 4 -->
-					<div class="projects_project fade1 loading">
+
+					<section id="client">
 						<div class="row">
-							<div class="col-md-6">
-								<a href="abc-stories.html">
+							<div class="col-md-12 text-center fade1 loading">
+								<h3>Client Projects</h3>
+							</div>
+						</div>
+
+						<!-- Client Project 1 -->
+						<div class="projects_project fade1 loading" id="idagem">
+							<div class="row">
+								<div class="col-md-6">
+									<a href="idagem.html">
+										<img
+											src="assets/img/IdaGem.png"
+											alt="IdaGem"
+											class="projects_img img-fluid"
+											loading="lazy"
+										/>
+									</a>
+								</div>
+								<div class="col-md-6">
+									<div>
+										<a href="idagem.html" class="link">
+											<h4 class="projects_project-title text-center">IdaGem</h4>
+										</a>
+									</div>
+									<div class="projects_project-description">
+										<p><b>Roles:</b> Project Lead, Programmer, Designer</p>
+										<p>
+											<b>About:</b> IdaGem is a gamified 4th-grade history
+											curriculum designed in collaboration with Idaho teachers.
+											It transforms traditional lessons into an interactive
+											experience, with extensive lessions, students exploring a
+											virtual Idaho Anne Frank Memorial, and completing
+											educational minigames. Aligned with state standards and
+											currently used in classrooms, IdaGem is also being
+											submitted for an educational game award.
+										</p>
+										<p class="projects_collaborators">
+											<b>Collaborators:</b> GIMM Works, Wassmuth Center for
+											Human Rights, Department of Homeland Security
+										</p>
+									</div>
+									<div class="row text-center">
+										<div class="col-md-12">
+											<a
+												class="btn projects__project-btn"
+												href="https://idagem.org/"
+												target="_blank"
+												>Website</a
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr />
+						</div>
+						<!-- Client Project 2 -->
+						<div class="projects_project fade1 loading" id="geoscience-exhibit">
+							<div class="row">
+								<div class="col-md-6">
+									<a href="geoscience-exhibit.html">
+										<img
+											src="assets/img/GeoScienceExhibit/Exhibit.png"
+											alt="Geoscience Exhibit"
+											class="projects_img img-fluid"
+											loading="lazy"
+										/>
+									</a>
+								</div>
+								<div class="col-md-6">
+									<div>
+										<a href="geoscience-exhibit.html" class="link">
+											<h4 class="projects_project-title text-center">
+												Geoscience Exhibit
+											</h4>
+										</a>
+									</div>
+									<div class="projects_project-description">
+										<p><b>Roles:</b> Programmer, UI, Data Conversion</p>
+										<p>
+											<b>About:</b> This application has been developed for an
+											exhibit at the 2024
+											<a
+												href="https://personalstructures.com/"
+												target="_blank"
+												class="link"
+												>Personal Structures Exhibition</a
+											>
+											in Venice, Italy. It displays geological drone data
+											gathered by Boise State University's Human-Environment
+											Systems department in an interactive manner. Exhibitors
+											are able to immerse themselves in the environment while
+											learning about invasive plant species in Idaho.
+										</p>
+										<p class="projects_collaborators">
+											<b>Collaborators:</b> Dr. Megan Cattau, Mae Bridgeman, Kaj
+											Forney, Chase Franklin, Mitchell Oliarny, Jayden Quallio
+										</p>
+									</div>
+									<div class="row text-center">
+										<div class="col-md-12">
+											<a
+												class="btn projects__project-btn"
+												href="https://github.com/cartertjones/geoscience-exhibit"
+												target="_blank"
+												>Repository</a
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr />
+						</div>
+						<!-- Client Project 3 -->
+						<div class="projects_project fade1 loading">
+							<div class="row">
+								<div class="col-md-6">
 									<img
-										src="assets/img/ABC_Stories.png"
-										alt="ABC Stories"
+										src="assets/img/Vocab_Verse.png"
+										alt="Vocab Verse"
 										class="projects_img img-fluid"
 										loading="lazy"
 									/>
-								</a>
-							</div>
-							<div class="col-md-6">
-								<div>
-									<a href="abc-stories.html" class="link">
-										<h4 class="projects_project-title text-center">
-											ABC Stories
-										</h4>
-									</a>
 								</div>
-								<div class="projects_project-description">
-									<p>
-										<b>Collaborators:</b> GIMM Works, Mae Bridgeman, Kaj Forney,
-										Chase Franklin, Mitchell Oliarny, Jayden Quallio
-									</p>
-									<p><b>Roles:</b> Programmer</p>
-									<p>
-										<b>About:</b> An iPad application designed to help children
-										learn the alphabet through interactive stories. Featuring a
-										variety of stories, each with unique interactions and
-										animations.
-									</p>
+								<div class="col-md-6">
+									<div>
+										<h4 class="projects_project-title text-center">
+											<strong>Vocab Verse</strong>
+										</h4>
+									</div>
+									<div class="projects_project-description">
+										<p><b>Roles:</b> Lead Programmer</p>
+										<p>
+											<b>About:</b> Vocab Verse is an iOS app designed to help
+											students with dyslexia and autism improve word recognition
+											through interactive, image-based learning. Built in Swift,
+											it reinforces vocabulary comprehension with engaging
+											visuals and structured exercises. Developed with a focus
+											on accessibility, the app is currently being submitted for
+											an Apple award.
+										</p>
+										<p class="projects_collaborators">
+											<b>Collaborators:</b> Jacob Thrall, Konner Pierce, Rachael
+											Nordby, Kaj Forney, Chase Franklin
+										</p>
+									</div>
+									<div class="text-center">
+										<button class="toggleVideo btn" data-target="VocabVerseVid">
+											Show/Hide Video
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<hr />
+						<div class="row">
+							<div class="col-md-2"></div>
+							<div class="col-md-8">
+								<div class="player ratio ratio-16x9" id="VocabVerseVid">
+									<iframe
+										src="https://www.youtube.com/embed/n9mUI1x46DA?si=roSx5SHykslPYTPU"
+										title="YouTube video player"
+										allow="autoplay"
+										allowfullscreen
+										loading="lazy"
+									></iframe>
+								</div>
+							</div>
+							<div class="col-md-2"></div>
+						</div>
+
+						<hr />
+						<!-- Client Project 4 -->
+						<div class="projects_project fade1 loading">
+							<div class="row">
+								<div class="col-md-6">
+									<a href="abc-stories.html">
+										<img
+											src="assets/img/ABC_Stories.png"
+											alt="ABC Stories"
+											class="projects_img img-fluid"
+											loading="lazy"
+										/>
+									</a>
+								</div>
+								<div class="col-md-6">
+									<div>
+										<a href="abc-stories.html" class="link">
+											<h4 class="projects_project-title text-center">
+												ABC Stories
+											</h4>
+										</a>
+									</div>
+									<div class="projects_project-description">
+										<p><b>Roles:</b> Programmer</p>
+										<p>
+											<b>About:</b> An iPad application designed to help
+											children learn the alphabet through interactive stories.
+											Featuring a variety of stories, each with unique
+											interactions and animations.
+										</p>
+										<p class="projects_collaborators">
+											<b>Collaborators:</b> GIMM Works, Mae Bridgeman, Kaj
+											Forney, Chase Franklin, Mitchell Oliarny, Jayden Quallio
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr />
+					</section>
 				</div>
 			</section>
 
@@ -489,7 +620,7 @@
 					</div>
 
 					<!-- Game Project 1 -->
-					<div class="projects_project fade1 loading">
+					<div class="projects_project fade1 loading" id="six-shooter">
 						<div class="row">
 							<div class="col-md-6">
 								<a class="toggleVideo" href="six-shooter.html">
@@ -579,10 +710,6 @@
 								</div>
 								<div class="projects_project-description">
 									<p>
-										<b>Collaborators:</b> Sam Lummus, Kevin Sherwood, Hank
-										Davidson
-									</p>
-									<p>
 										<b>Roles:</b> Project Lead, Lead Programmer, Artist,
 										Animator, 3D Modeler, Level Designer, Sound Designer
 									</p>
@@ -593,6 +720,10 @@
 										time, the art style, and the unique games connected to each
 										of the three sections, devolve into further abstract visuals
 										and mechanics.
+									</p>
+									<p class="projects_collaborators">
+										<b>Collaborators:</b> Sam Lummus, Kevin Sherwood, Hank
+										Davidson
 									</p>
 								</div>
 								<div class="text-center">
@@ -652,10 +783,6 @@
 
 								<div class="projects_project-description">
 									<p>
-										<b>Collaborators:</b> Konner Pierce, Heaven Rust, Chase
-										Franklin, Jacob Thrall
-									</p>
-									<p>
 										<b>Music and Sounds:</b> Ethan Bessette, Bria Eutsey, Quinne
 										Houck, Freddie Oliveira-Chevres, Angelica Ramos
 									</p>
@@ -670,6 +797,10 @@
 										theme of paradoxes by having the player's actions be
 										simultaneously reflected and opposed by the echoes from an
 										alternate timeline.
+									</p>
+									<p class="projects_collaborators">
+										<b>Collaborators:</b> Konner Pierce, Heaven Rust, Chase
+										Franklin, Jacob Thrall
 									</p>
 								</div>
 								<div class="text-center">
@@ -726,7 +857,6 @@
 									</h4>
 								</div>
 								<div class="projects_project-description">
-									<p><b>Collaborators:</b> Torchfire Studios</p>
 									<p>
 										<b>Roles:</b> Lead Level Designer, 3D Modeler, Programmer
 									</p>
@@ -741,6 +871,9 @@
 											>Due to project restrictions, only a limited showcase is
 											available.</i
 										>
+									</p>
+									<p class="projects_collaborators">
+										<b>Collaborators:</b> Torchfire Studios
 									</p>
 								</div>
 
@@ -795,7 +928,10 @@
 
 					<hr />
 
-					<div class="projects_project fade1 loading">
+					<div
+						class="projects_project fade1 loading"
+						id="cinemas-wild-frontier"
+					>
 						<div class="row">
 							<div class="col-md-6">
 								<a href="cinemas-wild-frontier.html" target="_blank">
