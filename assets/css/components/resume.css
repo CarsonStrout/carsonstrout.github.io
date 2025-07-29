@@ -6,7 +6,7 @@ h4 {
 	letter-spacing: -0.05em;
 	line-height: 0.9;
 
-	background: linear-gradient(to right, #d4af37, #fffff0);
+	background: linear-gradient(to right, #fabd2f, #ebdbb2);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 
@@ -19,7 +19,7 @@ h4 {
 
 .resume p {
 	font-size: var(--text-sm);
-	color: #e8e5cf;
+	color: #d5c4a1;
 }
 
 .resume_dates {
@@ -34,7 +34,7 @@ h4 {
 
 ul {
 	font-size: var(--text-sm);
-	color: #e8e5cf;
+	color: #d5c4a1;
 }
 
 h2 {

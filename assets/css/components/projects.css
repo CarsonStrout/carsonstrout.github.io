@@ -1,5 +1,5 @@
 .projects p {
-	color: #e8e5cf;
+	color: #d5c4a1;
 }
 
 .projects h2 {
@@ -12,7 +12,7 @@
 
 .projects_img {
 	border-radius: 1rem;
-	border: 1px solid #d4af37;
+	border: 1px solid #fabd2f;
 	transition: 0.5s;
 	margin: 2rem 0;
 }
